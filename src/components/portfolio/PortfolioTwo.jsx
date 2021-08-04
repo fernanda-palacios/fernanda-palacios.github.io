@@ -22,12 +22,12 @@ const PortfolioTwo = () => {
               {/* End shane_tm_title */}
               <div className="portfolio_filter">
                 <Tabs>
-                  {/* <TabList>
+                  <TabList>
                     <Tab>All</Tab>
                     <Tab>Design</Tab>
                     <Tab>Branding</Tab>
                     <Tab>Photography</Tab>
-                  </TabList> */}
+                  </TabList>
                   {/* End tablist */}
                   <div className="portfolio_list">
                     <SRLWrapper>
@@ -37,16 +37,18 @@ const PortfolioTwo = () => {
                             <Reveal effect="fadeIn">
                               <div className="inner">
                                 <div className="entry shane_tm_portfolio_animation_wrap">
-                                  <a href="/img/portfolio/13.jpg">
+                                  {/* project image popup */}
+                                  <a href="/img/news/1.jpg">
+                                    {/* project image homepage */}
                                     <img
                                       src="/img/portfolio/13.jpg"
-                                      alt="Design"
+                                      alt="Category 1"
                                     />
                                   </a>
                                 </div>
                                 <div className="mobile_title">
-                                  <h3>Project Name</h3>
-                                  <span>Design</span>
+                                  <h3>Project Name 1</h3>
+                                  <span>Category 1</span>
                                 </div>
                               </div>
                             </Reveal>
@@ -60,13 +62,13 @@ const PortfolioTwo = () => {
                                   <a href="/img/portfolio/14.jpg">
                                     <img
                                       src="/img/portfolio/14.jpg"
-                                      alt="Branding"
+                                      alt="Category 2"
                                     />
                                   </a>
                                 </div>
                                 <div className="mobile_title">
-                                  <h3>Good Present</h3>
-                                  <span>Branding</span>
+                                  <h3>Project Name 2</h3>
+                                  <span>Category 2</span>
                                 </div>
                               </div>
                             </Reveal>
@@ -80,13 +82,13 @@ const PortfolioTwo = () => {
                                   <a href="/img/portfolio/15.jpg">
                                     <img
                                       src="/img/portfolio/15.jpg"
-                                      alt="Photography"
+                                      alt="Category 3"
                                     />
                                   </a>
                                 </div>
                                 <div className="mobile_title">
-                                  <h3>Ice Cream</h3>
-                                  <span>Photography</span>
+                                  <h3>Project Name 3</h3>
+                                  <span>Category 3</span>
                                 </div>
                               </div>
                             </Reveal>
@@ -100,13 +102,13 @@ const PortfolioTwo = () => {
                                   <a href="/img/portfolio/24.jpg">
                                     <img
                                       src="/img/portfolio/24.jpg"
-                                      alt="Design"
+                                      alt="Category 4"
                                     />
                                   </a>
                                 </div>
                                 <div className="mobile_title">
-                                  <h3>Black Coffee</h3>
-                                  <span>Design</span>
+                                  <h3>Project Name 4</h3>
+                                  <span>Category 4</span>
                                 </div>
                               </div>
                             </Reveal>
@@ -120,13 +122,13 @@ const PortfolioTwo = () => {
                                   <a href="/img/portfolio/11.jpg">
                                     <img
                                       src="/img/portfolio/11.jpg"
-                                      alt="Branding"
+                                      alt="Category 5"
                                     />
                                   </a>
                                 </div>
                                 <div className="mobile_title">
-                                  <h3>Blue Lemon</h3>
-                                  <span>Branding</span>
+                                  <h3>Project Name 5</h3>
+                                  <span>Category 5</span>
                                 </div>
                               </div>
                             </Reveal>
@@ -140,13 +142,33 @@ const PortfolioTwo = () => {
                                   <a href="/img/portfolio/16.jpg">
                                     <img
                                       src="/img/portfolio/16.jpg"
-                                      alt="Photography"
+                                      alt="Category 6"
                                     />
                                   </a>
                                 </div>
                                 <div className="mobile_title">
-                                  <h3>Sweet Cherry</h3>
-                                  <span>Photography</span>
+                                  <h3>Project Name 6</h3>
+                                  <span>Category 6</span>
+                                </div>
+                              </div>
+                            </Reveal>
+                          </li>
+                          {/* End single image block */}
+
+                          <li>
+                            <Reveal effect="fadeIn">
+                              <div className="inner">
+                                <div className="entry shane_tm_portfolio_animation_wrap">
+                                  <a href="/img/portfolio/16.jpg">
+                                    <img
+                                      src="/img/portfolio/16.jpg"
+                                      alt="Category 7"
+                                    />
+                                  </a>
+                                </div>
+                                <div className="mobile_title">
+                                  <h3>Project Name 7</h3>
+                                  <span>Category 7</span>
                                 </div>
                               </div>
                             </Reveal>
@@ -157,14 +179,16 @@ const PortfolioTwo = () => {
                       </TabPanel>
                       {/* END ALL PORTFOLIO GALLERY */}
 
+
+                  {/* Begin other tabs  */}
                       <TabPanel>
                         <ul className="gallery_zoom">
                           <li>
                             <div className="inner">
                               <div className="entry shane_tm_portfolio_animation_wrap">
-                                <a href="/img/portfolio/13.jpg">
+                                <a href="/img/logo/dark.jpg">
                                   <img
-                                    src="/img/portfolio/13.jpg"
+                                    src="/img/logo/dark.jpg"
                                     alt="Branding"
                                   />
                                 </a>
@@ -197,7 +221,7 @@ const PortfolioTwo = () => {
                         </ul>
                         {/* End portfolio list */}
                       </TabPanel>
-
+                    
                       <TabPanel>
                         <ul className="gallery_zoom">
                           <li>
@@ -210,10 +234,10 @@ const PortfolioTwo = () => {
                                   />
                                 </a>
                               </div>
-                              {/* <div className="mobile_title">
+                              <div className="mobile_title">
                                 <h3>Sweet Fruit</h3>
                                 <span>Design</span>
-                              </div> */}
+                              </div> 
                             </div>
                           </li>
                           {/* End single image block */}
@@ -270,13 +294,14 @@ const PortfolioTwo = () => {
                               </div>
                               <div className="mobile_title">
                                 <h3>Sweet Cherry</h3>
-                                <span>Photography</span>
+                                <span>somehting</span>
                               </div>
                             </div>
                           </li>
                         </ul>
                         {/* End single image block */}
                       </TabPanel>
+                    {/* End other tabs  */}
                     </SRLWrapper>
                     {/* End tabpanel */}
                   </div>
