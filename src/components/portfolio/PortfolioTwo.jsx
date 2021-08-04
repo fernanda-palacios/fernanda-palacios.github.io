@@ -6,19 +6,20 @@ import Reveal from "react-reveal/Reveal";
 import Modal from "react-modal";
 import {projects} from './projectsData';
 
-// import Contact from "../Contact";
-// import Social from "../Social";
-// import Map from "../Map";
-
-
 const PortfolioTwo = () => {
 
   const [isOpen, setIsOpen] = useState(false);
+  const [currProject, setCurrProject] = useState(undefined);
 
-  function toggleModalOne() {
-    setIsOpen(!isOpen);
+  function openProjectViewModal(projectIndex){
+    setCurrProject(projectIndex)
+    setIsOpen(true)
   }
 
+  function closeProjectViewModal(){
+    setIsOpen(false)
+    setCurrProject(undefined)
+  }
 
   return (
     <div className="shane_tm_section" id="projects">
@@ -45,10 +46,13 @@ const PortfolioTwo = () => {
                   </TabList> */}
                   {/* End tablist */}
                   <div className="portfolio_list">
+                   
                     {/* <SRLWrapper> */}
                       <TabPanel>
                         <ul className="gallery_zoom">
-                          <li>
+
+                        {projects.map((project, index)=>{
+                           return (<li>
                             {/* <Reveal effect="fadeIn"> */}
                               <div className="inner">
                                 <div className="entry shane_tm_portfolio_animation_wrap">
@@ -57,139 +61,21 @@ const PortfolioTwo = () => {
                                     {/* project image homepage */}
                                     <img
                                       src="/img/portfolio/13.jpg"
-                                      alt="Category 1"
-                                      onClick={toggleModalOne}
+                                      alt={project.category}
+                                      onClick={()=>openProjectViewModal(index)}
                                     />
                                   </a>
                                 </div>
                                 <div className="mobile_title">
-                                  <h3>Project Name 1</h3>
-                                  <span>Category 1</span>
+                                  <h3>{project.title}</h3>
+                                  <span>{project.category}</span>
                                 </div>
                               </div>
                             {/* </Reveal> */}
-                          </li>
-                          {/* End single image block */}
-
-                          <li>
-                            <Reveal effect="fadeIn">
-                              <div className="inner">
-                                <div className="entry shane_tm_portfolio_animation_wrap">
-                                  <a href="/img/portfolio/14.jpg">
-                                    <img
-                                      src="/img/portfolio/14.jpg"
-                                      alt="Category 2"
-                                    />
-                                  </a>
-                                </div>
-                                <div className="mobile_title">
-                                  <h3>Project Name 2</h3>
-                                  <span>Category 2</span>
-                                </div>
-                              </div>
-                            </Reveal>
-                          </li>
-                          {/* End single image block */}
-
-                          <li>
-                            <Reveal effect="fadeIn">
-                              <div className="inner">
-                                <div className="entry shane_tm_portfolio_animation_wrap">
-                                  <a href="/img/portfolio/15.jpg">
-                                    <img
-                                      src="/img/portfolio/15.jpg"
-                                      alt="Category 3"
-                                    />
-                                  </a>
-                                </div>
-                                <div className="mobile_title">
-                                  <h3>Project Name 3</h3>
-                                  <span>Category 3</span>
-                                </div>
-                              </div>
-                            </Reveal>
-                          </li>
-                          {/* End single image block */}
-
-                          <li>
-                            <Reveal effect="fadeIn">
-                              <div className="inner">
-                                <div className="entry shane_tm_portfolio_animation_wrap">
-                                  <a href="/img/portfolio/24.jpg">
-                                    <img
-                                      src="/img/portfolio/24.jpg"
-                                      alt="Category 4"
-                                    />
-                                  </a>
-                                </div>
-                                <div className="mobile_title">
-                                  <h3>Project Name 4</h3>
-                                  <span>Category 4</span>
-                                </div>
-                              </div>
-                            </Reveal>
-                          </li>
-                          {/* End single image block */}
-
-                          <li>
-                            <Reveal effect="fadeIn">
-                              <div className="inner">
-                                <div className="entry shane_tm_portfolio_animation_wrap">
-                                  <a href="/img/portfolio/11.jpg">
-                                    <img
-                                      src="/img/portfolio/11.jpg"
-                                      alt="Category 5"
-                                    />
-                                  </a>
-                                </div>
-                                <div className="mobile_title">
-                                  <h3>Project Name 5</h3>
-                                  <span>Category 5</span>
-                                </div>
-                              </div>
-                            </Reveal>
-                          </li>
-                          {/* End single image block */}
-
-                          <li>
-                            <Reveal effect="fadeIn">
-                              <div className="inner">
-                                <div className="entry shane_tm_portfolio_animation_wrap">
-                                  <a href="/img/portfolio/16.jpg">
-                                    <img
-                                      src="/img/portfolio/16.jpg"
-                                      alt="Category 6"
-                                    />
-                                  </a>
-                                </div>
-                                <div className="mobile_title">
-                                  <h3>Project Name 6</h3>
-                                  <span>Category 6</span>
-                                </div>
-                              </div>
-                            </Reveal>
-                          </li>
-                          {/* End single image block */}
-
-                          <li>
-                            <Reveal effect="fadeIn">
-                              <div className="inner">
-                                <div className="entry shane_tm_portfolio_animation_wrap">
-                                  <a href="/img/portfolio/16.jpg">
-                                    <img
-                                      src="/img/portfolio/16.jpg"
-                                      alt="Category 7"
-                                    />
-                                  </a>
-                                </div>
-                                <div className="mobile_title">
-                                  <h3>Project Name 7</h3>
-                                  <span>Category 7</span>
-                                </div>
-                              </div>
-                            </Reveal>
-                          </li>
-                          {/* End single image block */}
+                            {/* End single image block */}
+  
+                          </li>)
+                        })}
                         </ul>
                         {/* End portfolio list */}
                       </TabPanel>
@@ -206,16 +92,18 @@ const PortfolioTwo = () => {
       </SimpleReactLightbox>
 
       {/* Start Modal */}
+
       <Modal
         isOpen={isOpen}
-        onRequestClose={toggleModalOne}
+        onRequestClose={closeProjectViewModal}
         contentLabel="My dialog"
         className="custom-modal"
         overlayClassName="custom-overlay"
         closeTimeoutMS={500}
       >
+        
         <div className="shane_tm_mobalbox_contact">
-          <button className="close-modal" onClick={toggleModalOne}>
+          <button className="close-modal" onClick={closeProjectViewModal}>
             <img src="/img/svg/cancel.svg" alt="close icon" />
           </button>
           {/* End close icon */}
@@ -223,14 +111,13 @@ const PortfolioTwo = () => {
             <div className="description_wrap scrollable">
               {/* Start modal content */}
               <div className="title">
-                <h3>{projects[0].title}</h3>
+                <h3>{currProject !== undefined ? projects[currProject].title: undefined}</h3>
               </div>
               {/* End title */}
 
               <div className="text">
-                {/* <p>{projectsData.firstName}</p> */}
                     <p>
-                      {projects[0].description}
+                      {currProject !== undefined ? projects[currProject].description : undefined}
                     </p>
                   </div>
               {/* End description */}
@@ -257,7 +144,7 @@ const PortfolioTwo = () => {
                   <li>
                     <div className="list_inner">
                       <p>
-                        <a href={projects[0].link}>link</a>
+                        <a href={currProject !== undefined ? projects[currProject].link: undefined}>link</a>
                       </p>
                     </div>
                   </li>
@@ -272,7 +159,8 @@ const PortfolioTwo = () => {
         </div>
         {/* End modalbox news */}
       </Modal>
-      {/* End modal */}
+      // {/* End modal */}
+      )
     </div>
   );
 };
