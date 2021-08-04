@@ -22,12 +22,12 @@ const PortfolioTwo = () => {
               {/* End shane_tm_title */}
               <div className="portfolio_filter">
                 <Tabs>
-                  <TabList>
+                  {/* <TabList>
                     <Tab>All</Tab>
                     <Tab>Design</Tab>
                     <Tab>Branding</Tab>
                     <Tab>Photography</Tab>
-                  </TabList>
+                  </TabList> */}
                   {/* End tablist */}
                   <div className="portfolio_list">
                     <SRLWrapper>
