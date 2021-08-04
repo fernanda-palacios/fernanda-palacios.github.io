@@ -4,6 +4,8 @@ import SimpleReactLightbox from "simple-react-lightbox";
 import { SRLWrapper } from "simple-react-lightbox";
 import Reveal from "react-reveal/Reveal";
 import Modal from "react-modal";
+import {projects} from './projectsData';
+
 // import Contact from "../Contact";
 // import Social from "../Social";
 // import Map from "../Map";
@@ -221,17 +223,14 @@ const PortfolioTwo = () => {
             <div className="description_wrap scrollable">
               {/* Start modal content */}
               <div className="title">
-                <h3>Project Title</h3>
+                <h3>{projects[0].title}</h3>
               </div>
               {/* End title */}
 
               <div className="text">
+                {/* <p>{projectsData.firstName}</p> */}
                     <p>
-                      It is a long established fact that a reader will be distracted by the 
-                      readable content of a page when looking at its layout. The point of 
-                      using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                       as opposed to using 'Content here, content here', making it look like readable English.
-                       Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text
+                      {projects[0].description}
                     </p>
                   </div>
               {/* End description */}
@@ -258,7 +257,7 @@ const PortfolioTwo = () => {
                   <li>
                     <div className="list_inner">
                       <p>
-                        <a href="https://github.com/">project link</a>
+                        <a href={projects[0].link}>link</a>
                       </p>
                     </div>
                   </li>
