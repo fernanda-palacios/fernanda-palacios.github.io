@@ -1,10 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import SimpleReactLightbox from "simple-react-lightbox";
 import { SRLWrapper } from "simple-react-lightbox";
 import Reveal from "react-reveal/Reveal";
+import Modal from "react-modal";
+// import Contact from "../Contact";
+// import Social from "../Social";
+// import Map from "../Map";
+
 
 const PortfolioTwo = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleModalOne() {
+    setIsOpen(!isOpen);
+  }
+
+
   return (
     <div className="shane_tm_section" id="projects">
       <SimpleReactLightbox>
@@ -30,19 +43,20 @@ const PortfolioTwo = () => {
                   </TabList> */}
                   {/* End tablist */}
                   <div className="portfolio_list">
-                    <SRLWrapper>
+                    {/* <SRLWrapper> */}
                       <TabPanel>
                         <ul className="gallery_zoom">
                           <li>
-                            <Reveal effect="fadeIn">
+                            {/* <Reveal effect="fadeIn"> */}
                               <div className="inner">
                                 <div className="entry shane_tm_portfolio_animation_wrap">
                                   {/* project image popup */}
-                                  <a href="/img/news/1.jpg">
+                                  <a>
                                     {/* project image homepage */}
                                     <img
                                       src="/img/portfolio/13.jpg"
                                       alt="Category 1"
+                                      onClick={toggleModalOne}
                                     />
                                   </a>
                                 </div>
@@ -51,7 +65,7 @@ const PortfolioTwo = () => {
                                   <span>Category 1</span>
                                 </div>
                               </div>
-                            </Reveal>
+                            {/* </Reveal> */}
                           </li>
                           {/* End single image block */}
 
@@ -178,131 +192,7 @@ const PortfolioTwo = () => {
                         {/* End portfolio list */}
                       </TabPanel>
                       {/* END ALL PORTFOLIO GALLERY */}
-
-
-                  {/* Begin other tabs  */}
-                      <TabPanel>
-                        <ul className="gallery_zoom">
-                          <li>
-                            <div className="inner">
-                              <div className="entry shane_tm_portfolio_animation_wrap">
-                                <a href="/img/logo/dark.jpg">
-                                  <img
-                                    src="/img/logo/dark.jpg"
-                                    alt="Branding"
-                                  />
-                                </a>
-                              </div>
-                              <div className="mobile_title">
-                                <h3>Blue Lemon</h3>
-                                <span>Branding</span>
-                              </div>
-                            </div>
-                          </li>
-                          {/* End single image block */}
-
-                          <li>
-                            <div className="inner">
-                              <div className="entry shane_tm_portfolio_animation_wrap">
-                                <a href="/img/portfolio/14.jpg">
-                                  <img
-                                    src="/img/portfolio/14.jpg"
-                                    alt="Photography"
-                                  />
-                                </a>
-                              </div>
-                              <div className="mobile_title">
-                                <h3>Sweet Cherry</h3>
-                                <span>Photography</span>
-                              </div>
-                            </div>
-                          </li>
-                          {/* End single image block */}
-                        </ul>
-                        {/* End portfolio list */}
-                      </TabPanel>
-                    
-                      <TabPanel>
-                        <ul className="gallery_zoom">
-                          <li>
-                            <div className="inner">
-                              <div className="entry shane_tm_portfolio_animation_wrap">
-                                <a href="/img/portfolio/24.jpg">
-                                  <img
-                                    src="/img/portfolio/24.jpg"
-                                    alt="Design"
-                                  />
-                                </a>
-                              </div>
-                              <div className="mobile_title">
-                                <h3>Sweet Fruit</h3>
-                                <span>Design</span>
-                              </div> 
-                            </div>
-                          </li>
-                          {/* End single image block */}
-
-                          <li>
-                            <div className="inner">
-                              <div className="entry shane_tm_portfolio_animation_wrap">
-                                <a href="/img/portfolio/15.jpg">
-                                  <img
-                                    src="/img/portfolio/15.jpg"
-                                    alt="Branding"
-                                  />
-                                </a>
-                              </div>
-                              <div className="mobile_title">
-                                <h3>Good Present</h3>
-                                <span>Branding</span>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                        {/* End single image block */}
-                      </TabPanel>
-
-                      <TabPanel>
-                        <ul className="gallery_zoom">
-                          <li>
-                            <div className="inner">
-                              <div className="entry shane_tm_portfolio_animation_wrap">
-                                <a href="/img/portfolio/11.jpg">
-                                  <img
-                                    src="/img/portfolio/11.jpg"
-                                    alt="Branding"
-                                  />
-                                </a>
-                              </div>
-                              <div className="mobile_title">
-                                <h3>Blue Lemon</h3>
-                                <span>Branding</span>
-                              </div>
-                            </div>
-                          </li>
-                          {/* End single image block */}
-
-                          <li>
-                            <div className="inner">
-                              <div className="entry shane_tm_portfolio_animation_wrap">
-                                <a href="/img/portfolio/16.jpg">
-                                  <img
-                                    src="/img/portfolio/16.jpg"
-                                    alt="Photography"
-                                  />
-                                </a>
-                              </div>
-                              <div className="mobile_title">
-                                <h3>Sweet Cherry</h3>
-                                <span>somehting</span>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                        {/* End single image block */}
-                      </TabPanel>
-                    {/* End other tabs  */}
-                    </SRLWrapper>
+                    {/* </SRLWrapper> */}
                     {/* End tabpanel */}
                   </div>
                   {/* End list wrapper */}
@@ -312,6 +202,78 @@ const PortfolioTwo = () => {
           </div>
         </div>
       </SimpleReactLightbox>
+
+      {/* Start Modal */}
+      <Modal
+        isOpen={isOpen}
+        onRequestClose={toggleModalOne}
+        contentLabel="My dialog"
+        className="custom-modal"
+        overlayClassName="custom-overlay"
+        closeTimeoutMS={500}
+      >
+        <div className="shane_tm_mobalbox_contact">
+          <button className="close-modal" onClick={toggleModalOne}>
+            <img src="/img/svg/cancel.svg" alt="close icon" />
+          </button>
+          {/* End close icon */}
+          <div className="box_inner">
+            <div className="description_wrap scrollable">
+              {/* Start modal content */}
+              <div className="title">
+                <h3>Project Title</h3>
+              </div>
+              {/* End title */}
+
+              <div className="text">
+                    <p>
+                      It is a long established fact that a reader will be distracted by the 
+                      readable content of a page when looking at its layout. The point of 
+                      using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                       as opposed to using 'Content here, content here', making it look like readable English.
+                       Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text
+                    </p>
+                  </div>
+              {/* End description */}
+
+
+              <div className="wrapper">
+                <div className="left">
+                  <div className="fields">
+                    {/* <Contact /> */}
+                  </div>
+                </div>
+                {/* End left */}
+                <div className="right">
+                  <div className="map_wrap">
+                    {/* <Map /> */}
+                  </div>
+                </div>
+                {/* End right */}
+              </div>
+              {/* End wrapper */}
+
+              <div className="short_info">
+                <ul>                
+                  <li>
+                    <div className="list_inner">
+                      <p>
+                        <a href="https://github.com/">project link</a>
+                      </p>
+                    </div>
+                  </li>
+                  
+                  
+                </ul>
+              </div>
+              {/* End modal conetent */}
+            </div>
+          </div>
+          {/* End box inner */}
+        </div>
+        {/* End modalbox news */}
+      </Modal>
+      {/* End modal */}
     </div>
   );
 };
