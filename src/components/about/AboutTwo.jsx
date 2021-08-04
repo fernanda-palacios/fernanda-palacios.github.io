@@ -15,9 +15,8 @@ const AboutTwo = () => {
                     <div
                       className="main"
                       style={{
-                        backgroundImage: `url(${
-                          process.env.PUBLIC_URL + "img/about/2.jpg"
-                        })`,
+                        backgroundImage: `url(${process.env.PUBLIC_URL + "img/about/2.jpg"
+                          })`,
                       }}
                     ></div>
                   </Reveal>
@@ -30,16 +29,15 @@ const AboutTwo = () => {
                 <Reveal effect="fadeInLeft">
                   <div className="shane_tm_title">
                     <span>About Me</span>
-                    <h3>Creative Ui & Ux Designer based in New York, USA</h3>
+                    <h3>Lorem Ipsum is simply dummy text of the printing</h3>
                   </div>
                   <div className="text">
                     <p>
-                      I'm web designer, and I'm very passionate and dedicated to
-                      my work. With 20 years experience as a professional web
-                      developer, I have acquired the skills and knowledge
-                      necessary to make your project a success. I enjoy every
-                      step of the design process, from discussion and
-                      collaboration.
+                      It is a long established fact that a reader will be distracted by the 
+                      readable content of a page when looking at its layout. The point of 
+                      using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                       as opposed to using 'Content here, content here', making it look like readable English.
+                       Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text
                     </p>
                   </div>
                   <div className="shane_tm_button">
