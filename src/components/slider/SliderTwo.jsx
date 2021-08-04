@@ -21,14 +21,15 @@ const Slider = () => {
           <div className="content">
             <div className="name_wrap">
               <h3>
-                <span>Mrs</span> Iqra<span className="overlay_effect"></span>
+                <span>Fernanda</span> 
+                <div>Palacios</div><span className="overlay_effect"></span>
               </h3>
             </div>
             {/* End title */}
 
             <div className="job_wrap">
               <span className="job">
-                Ui & Ux Designer
+                {/* Ui & Ux Designer */}
                 <span className="overlay_effect"></span>
               </span>
             </div>
