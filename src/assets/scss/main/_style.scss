@@ -1018,10 +1018,10 @@ body.loaded .overlay_effect:after {
       img {
         transform: scale(1.1);
       }
-    }
-    .mobile_title {
-      transform: translateY(0);
-    }
+    }  
+  }
+  .mobile_title {
+    transform: translateY(0);
   }
 }
 .shane_tm_portfolio .portfolio_list .image {

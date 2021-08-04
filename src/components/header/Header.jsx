@@ -22,16 +22,16 @@ const Header = () => {
     <>
       <div className="shane_tm_topbar">
         <div className={navbar ? "topbar_inner opened" : "topbar_inner"}>
-          <div className="logo">
+          {/* <div className="logo">
             <NavLink to="/">
               <img src="/img/logo/new/dark.png" alt="partners brand" />
             </NavLink>
-          </div>
+          </div> */}
           {/* End logo */}
           <div className="menu">
             <Scrollspy
               className="anchor_nav"
-              items={["home", "about", "portfolio", "news", "contact"]}
+              items={["home", "about", "projects"]}
               currentClassName="current"
               offset={-200}
             >
@@ -42,24 +42,24 @@ const Header = () => {
                 <a href="#about">About</a>
               </li>
               <li>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#projects">Projects</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#news">News</a>
               </li>
               <li>
                 <a href="#contact">Contact</a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a
                   className="white-fill-bg btn-outline btn_sm"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://themeforest.net/item/shane-react-personal-portfolio-template/32642263"
+                  href="https://themeforest.net/item/shane-react-personal-projects-template/32642263"
                 >
                   Buy Now
                 </a>
-              </li>
+              </li> */}
             </Scrollspy>
           </div>
           {/* End menu */}
@@ -113,8 +113,8 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#portfolio" onClick={handleClick}>
-                    Portfolio
+                  <a href="#projects" onClick={handleClick}>
+                    Projects
                   </a>
                 </li>
                 <li>

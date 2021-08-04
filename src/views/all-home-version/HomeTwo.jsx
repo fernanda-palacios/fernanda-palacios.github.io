@@ -27,13 +27,13 @@ const HomeTwo = () => {
       <Portfolio />
       {/* End Portfolio Section */}
 
-      <Skills />
+      {/* <Skills /> */}
       {/* End Skills Section */}
 
-      <Video />
+      {/* <Video /> */}
       {/* End Video Section */}
 
-      <div className="shane_tm_section">
+      {/* <div className="shane_tm_section">
         <div className="shane_tm_partners">
           <div className="container">
             <div className="partners_inner">
@@ -41,10 +41,10 @@ const HomeTwo = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* End shane_tm_partners */}
 
-      <div className="shane_tm_section">
+      {/* <div className="shane_tm_section">
         <div className="shane_tm_testimonials">
           <div className="container">
             <div className="testimonials_inner">
@@ -64,16 +64,16 @@ const HomeTwo = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* End  shane_tm_testimonials*/}
 
-      <News />
+      {/* <News /> */}
       {/* End Blog Section */}
 
-      <CallToAction />
+      {/* <CallToAction /> */}
       {/* End CallToAction */}
 
-      <Footer />
+      {/* <Footer /> */}
       {/* End Footer Section */}
     </div>
   );

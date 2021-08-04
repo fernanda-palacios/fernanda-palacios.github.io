@@ -6,7 +6,7 @@ import Reveal from "react-reveal/Reveal";
 
 const PortfolioTwo = () => {
   return (
-    <div className="shane_tm_section" id="portfolio">
+    <div className="shane_tm_section" id="projects">
       <SimpleReactLightbox>
         <div className="shane_tm_portfolio">
           <div className="container">
@@ -14,20 +14,20 @@ const PortfolioTwo = () => {
               <div className="shane_tm_title">
                 <div className="title_flex">
                   <div className="left">
-                    <span>Portfolio</span>
-                    <h3>Creative Portfolio</h3>
+                    <span>Projects</span>
+                    <h3>Projects</h3>
                   </div>
                 </div>
               </div>
               {/* End shane_tm_title */}
               <div className="portfolio_filter">
                 <Tabs>
-                  <TabList>
+                  {/* <TabList>
                     <Tab>All</Tab>
                     <Tab>Design</Tab>
                     <Tab>Branding</Tab>
                     <Tab>Photography</Tab>
-                  </TabList>
+                  </TabList> */}
                   {/* End tablist */}
                   <div className="portfolio_list">
                     <SRLWrapper>
@@ -45,7 +45,7 @@ const PortfolioTwo = () => {
                                   </a>
                                 </div>
                                 <div className="mobile_title">
-                                  <h3>Sweet Fruit</h3>
+                                  <h3>Project Name</h3>
                                   <span>Design</span>
                                 </div>
                               </div>
@@ -210,10 +210,10 @@ const PortfolioTwo = () => {
                                   />
                                 </a>
                               </div>
-                              <div className="mobile_title">
+                              {/* <div className="mobile_title">
                                 <h3>Sweet Fruit</h3>
                                 <span>Design</span>
-                              </div>
+                              </div> */}
                             </div>
                           </li>
                           {/* End single image block */}
