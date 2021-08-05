@@ -70,7 +70,7 @@ const HomeTwo = () => {
       {/* <News /> */}
       {/* End Blog Section */}
 
-      <CallToAction />
+      {/* <CallToAction /> */}
       {/* End CallToAction */}
 
       {/* <Footer /> */}
