@@ -105,7 +105,7 @@ const PortfolioTwo = () => {
             </div>
           </div>
         </div>)}
-      </Modal>)
+      </Modal>
     </div>
   );
 };
