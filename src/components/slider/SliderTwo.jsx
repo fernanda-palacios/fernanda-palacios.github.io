@@ -38,11 +38,11 @@ const Slider = () => {
           </div>
           {/* End content */}
 
-          <div className="shane_tm_down loaded">
+          {/* <div className="shane_tm_down loaded">
             <div className="line_wrapper">
               <div className="line"></div>
             </div>
-          </div>
+          </div> */}
         </div>
         {/* End .container */}
       </div>

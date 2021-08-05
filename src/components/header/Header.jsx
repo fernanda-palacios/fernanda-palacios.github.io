@@ -117,17 +117,17 @@ const Header = () => {
                     Projects
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#news" onClick={handleClick}>
                     News
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a href="#contact" onClick={handleClick}>
                     Contact
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a
                     className="white-fill-bg btn-outline btn_sm"
                     target="_blank"
@@ -136,7 +136,7 @@ const Header = () => {
                   >
                     Buy Now
                   </a>
-                </li>
+                </li> */}
               </ul>
               <div className="social-menu">
                 <Social />
