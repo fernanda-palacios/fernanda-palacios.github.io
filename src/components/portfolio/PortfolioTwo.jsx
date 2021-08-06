@@ -40,7 +40,7 @@ const PortfolioTwo = () => {
                       <ul className="gallery_zoom">
                         {projects.map((project, index) => {
                           return (<li>
-                            <div className="inner">
+                            <div className="inner project_hover">
                               <div className="entry shane_tm_portfolio_animation_wrap">
                                 <a> {/* project image popup */}
                                   

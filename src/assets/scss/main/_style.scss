@@ -1124,6 +1124,12 @@ ul.react-tabs__tab-list {
   color: #000;
 }
 
+.shane_tm_portfolio .project_hover {
+  &:hover {
+    cursor: pointer
+  }
+}
+
 /*---------------------------------------------------*/
 /*	07) SHANE SKILLS
 /*---------------------------------------------------*/
