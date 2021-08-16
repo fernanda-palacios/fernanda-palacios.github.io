@@ -39,20 +39,35 @@ const PortfolioTwo = () => {
                     <TabPanel>
                       <ul className="gallery_zoom">
                         {projects.map((project, index) => {
+
                           return (<li>
                             <div className="inner project_hover">
                               <div className="entry shane_tm_portfolio_animation_wrap">
+
                                 <a> {/* project image popup */}
-                                  
+
                                   {/* project image homepage */}
-                                  <img
-                                    src="/img/portfolio/13.jpg"
-                                    alt={project.category}
-                                    onClick={() => openProjectViewModal(index)}
-                                  />
+                                  {index == 1 ?
+                                    <img
+                                      src={`/img/portfolio/${index}.svg`}
+                                      width="900"
+                                      height="900"
+                                      style={{ marginBottom: "40px" }}
+                                      alt={project.category}
+                                      onClick={() => openProjectViewModal(index)}
+                                    />
+                                    :
+                                    <img
+                                      src={`/img/portfolio/${index}.png`}
+                                      width="900"
+                                      height="900"
+                                      style={{ marginBottom: "40px" }}
+                                      alt={project.category}
+                                      onClick={() => openProjectViewModal(index)}
+                                    />}
                                 </a>
                               </div>
-                              <div className="mobile_title">
+                              <div className="mobile_title" style={{ backgroundColor: '#E8E8E8' }}>
                                 <h3>{project.title}</h3>
                                 <span>{project.category}</span>
                               </div>
@@ -77,34 +92,41 @@ const PortfolioTwo = () => {
         closeTimeoutMS={500}
       >
         {currProject !== undefined &&
-        (<div className="shane_tm_mobalbox_contact">
-          <button className="close-modal" onClick={closeProjectViewModal}>
-            <img src="/img/svg/cancel.svg" alt="close icon" />
-          </button>
-          <div className="box_inner">
-            <div className="description_wrap scrollable">
-              <div className="title">
-                <h3>{projects[currProject].title}</h3>
-              </div>
-              <div className="text">
-                <p>
+          (<div className="shane_tm_mobalbox_contact">
+            <button className="close-modal" onClick={closeProjectViewModal}>
+              <img src="/img/svg/cancel.svg" alt="close icon" />
+            </button>
+            <div className="box_inner">
+              <div className="description_wrap scrollable">
+                <div className="title">
+                  <h3>{projects[currProject].title}</h3>
+                </div>
+                <p style={{ marginTop: '20px' }}>
                   {projects[currProject].description}
                 </p>
-              </div>
-              <div className="short_info">
-                <ul>
-                  <li>
-                    <div className="list_inner">
-                      <p>
-                        <a href={projects[currProject].link}>link</a>
-                      </p>
-                    </div>
-                  </li>
-                </ul>
+                <div style={{ marginTop: '20px' }}>
+                  {projects[currProject].prog_lang && (
+                    <p>
+                      <b>Programming Languages: </b>{projects[currProject].prog_lang}
+                    </p>
+                  )}
+                  {projects[currProject].technologies && (
+                    <p>
+                      <b>Technologies: </b>{projects[currProject].technologies}
+                    </p>
+                  )}
+                  <div>
+                    <p><b>Links:</b></p>
+                    {projects[currProject].links.map((link) =>
+                    (
+                      <p><a href={link}>{link}</a></p>
+                    ))}
+
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>)}
+          </div>)}
       </Modal>
     </div>
   );
