@@ -145,9 +145,8 @@ export const projects = [
     "description":
       `
         A music visualizer which connects to Altera's DE1-Soc board FPGA (VGA display)
-         and is implemented in Verilog. This music visualizer responds to the volume and
-          pace of the beat by changing the length and colour of the lines in a bubble 
-          visualizer.
+         and is implemented in Verilog. This music visualizer changes the length and colour
+          of its sound waves in response to the volume and pace of the beat.
         `,
     "technologies": "Verilog (Hardware Description Language",
     "links": [
