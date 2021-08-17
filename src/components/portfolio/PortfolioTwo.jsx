@@ -107,20 +107,26 @@ const PortfolioTwo = () => {
                 <div style={{ marginTop: '20px' }}>
                   {projects[currProject].prog_lang && (
                     <p>
-                      <b>Programming Languages: </b>{projects[currProject].prog_lang}
+                      <b style={{ color: 'black' }}>Programming Languages: </b>{projects[currProject].prog_lang}
                     </p>
                   )}
                   {projects[currProject].technologies && (
                     <p>
-                      <b>Technologies: </b>{projects[currProject].technologies}
+                      <b style={{ color: 'black' }}>Technologies: </b>{projects[currProject].technologies}
                     </p>
                   )}
                   <div>
-                    <p><b>Links:</b></p>
-                    {projects[currProject].links.map((link) =>
-                    (
-                      <p><a href={link}>{link}</a></p>
-                    ))}
+                    <p>
+                      <b style={{ color: 'black' }}>Link(s):</b></p>
+                    <ul>
+                      {projects[currProject].links.map((link) =>
+
+                      (
+                        <li style={{ listStyle: "circle", listStylePosition: "inside" }}>
+                          <a style={{ color: "#6A8FD0" }} href={link}>{link}</a>
+                        </li>
+                      ))}
+                    </ul>
 
                   </div>
                 </div>
