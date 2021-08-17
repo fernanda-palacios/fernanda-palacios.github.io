@@ -47,7 +47,7 @@ const PortfolioTwo = () => {
                                 <a> {/* project image popup */}
 
                                   {/* project image homepage */}
-                                  {index == 1 ?
+                                  {index == 20 ?
                                     <img
                                       src={`/img/portfolio/${index}.svg`}
                                       width="900"
