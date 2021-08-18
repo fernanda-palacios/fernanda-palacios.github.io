@@ -20,7 +20,7 @@
   border-radius: 4px;
   outline: none;
   .box_inner{
-    height: 75vh;
+    // height: 75vh; (auto  based on content)
     width: 1200px;
     overflow-y: auto;
 
