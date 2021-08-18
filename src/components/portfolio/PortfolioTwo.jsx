@@ -104,32 +104,70 @@ const PortfolioTwo = () => {
                 <p style={{ marginTop: '20px' }}>
                   {projects[currProject].description}
                 </p>
-                <div style={{ marginTop: '20px' }}>
-                  {projects[currProject].prog_lang && (
-                    <p>
-                      <b style={{ color: 'black' }}>Programming Languages: </b>{projects[currProject].prog_lang}
-                    </p>
-                  )}
-                  {projects[currProject].technologies && (
-                    <p>
-                      <b style={{ color: 'black' }}>Technologies: </b>{projects[currProject].technologies}
-                    </p>
-                  )}
-                  <div>
-                    <p>
-                      <b style={{ color: 'black' }}>Link(s):</b></p>
-                    <ul>
-                      {projects[currProject].links.map((link) =>
 
-                      (
-                        <li style={{ listStyle: "circle", listStylePosition: "inside" }}>
-                          <a style={{ color: "#6A8FD0" }} href={link}>{link}</a>
-                        </li>
-                      ))}
-                    </ul>
+                {/* normal version */}
+                {!(currProject === 1 || currProject == 11) &&
+                  (<div>
+                    {projects[currProject].prog_lang && (
+                      <p style={{ marginTop: '20px' }}>
+                        <b style={{ color: 'black' }}>Programming Languages: </b>{projects[currProject].prog_lang}
+                      </p>
+                    )}
+                    {projects[currProject].technologies && (
+                      <p style={{ marginTop: '20px' }}>
+                        <b style={{ color: 'black' }}>Technologies: </b>{projects[currProject].technologies}
+                      </p>
+                    )}
+                    <div>
+                      <p style={{ marginTop: '20px' }}>
+                        <b style={{ color: 'black' }}>Link(s):</b></p>
+                      <ul>
+                        {projects[currProject].links.map((link) =>
 
-                  </div>
-                </div>
+                        (
+                          <li style={{ listStyle: "none" }}>
+                            <a 
+                            target="_blank" rel="noopener noreferrer"
+                            style={{ color: "#6A8FD0" }} href={link}>{link}</a>
+                          </li>
+                        ))}
+                      </ul>
+
+                    </div>
+                  </div>)}
+
+
+                {/* compressed version, different margins */}
+                {(currProject === 1 || currProject == 11) &&
+                  (
+                    <div >
+                      {projects[currProject].prog_lang && (
+                        <p style={{ marginTop: '1px' }}>
+                          <b style={{ color: 'black' }}>Programming Languages: </b>{projects[currProject].prog_lang}
+                        </p>
+                      )}
+                      {projects[currProject].technologies && (
+                        <p style={{ marginTop: '1px' }}>
+                          <b style={{ color: 'black' }}>Technologies: </b>{projects[currProject].technologies}
+                        </p>
+                      )}
+                      <div>
+                        <p style={{ marginTop: '1px' }}>
+                          <b style={{ color: 'black' }}>Link(s):</b></p>
+                        <ul>
+                          {projects[currProject].links.map((link) =>
+
+                          (
+                            <li style={{ listStyle: "none", marginTop: '0px' }}>
+                              <a 
+                              target="_blank" rel="noopener noreferrer"
+                              style={{ color: "#6A8FD0" }} href={link}>{link}</a>
+                            </li>
+                          ))}
+                        </ul>
+
+                      </div>
+                    </div>)}
               </div>
             </div>
           </div>)}

@@ -3,8 +3,8 @@ export const projects = [
     "title": "Personal Shopping App",
     "description":
       `
-        A web application where users can create and organize their personal shopping lists
-        as well as create wish lists (similar to ‘Amazon Lists’)
+        A web application where users can create and organize their personal shopping lists by categories 
+        as well as create wish lists of the products they like (similar to ‘Amazon Lists’).
         `,
     "prog_lang": 'Javascript, Nodejs',
     "technologies": "React, MaterialUI, MongoDB, Express",
@@ -15,16 +15,14 @@ export const projects = [
         Project for the City of Toronto`,
     "description":
       `
-        This project was part of CSC301 Software Engineering where our team was selected to
-         build an application for the TTSBDI team at the City of Toronto. 
-         It consisted of a web application where consultants can acquire traffic data from 
+        This project was part of CSC301 Software Engineering where our team built an application 
+        for the Transportation Data & Analytics team at the City of Toronto. 
+         It is a web application where consultants can acquire traffic data from 
          street segments in Toronto.  Users can create traffic data requests by drawing 
-         complex routes on a map and specifying date ranges and metrics to be included.  
+         complex routes on a map and specifying date ranges or metrics to be included.  
          Queries are automatically validated and modified based on available traffic data 
-         from the TTS team’s data repositories, users can ultimately obtain their requested
-          data as CSV formatted datasets.
-
-        `,
+         from the team’s big data repositories, and users can then download their requested 
+         CSV formatted datasets.`,
     "prog_lang": 'Javascript, Python',
     "technologies": "React, Material UI, Mapbox, Django, PostgreSQL, DynamoDB",
     "links": ["https://drive.google.com/file/d/193mDXXobLwnQvw623UFuNAhlt1OURabk/view?usp=sharing"]
@@ -148,7 +146,7 @@ export const projects = [
          and is implemented in Verilog. This music visualizer changes the length and colour
           of its sound waves in response to the volume and pace of the beat.
         `,
-    "technologies": "Verilog (Hardware Description Language",
+    "technologies": "Verilog (Hardware Description Language)",
     "links": [
       "https://github.com/fernanda-palacios/music-visualizer"
     ]
@@ -171,20 +169,17 @@ export const projects = [
     "title": "IoT password manager",
     "description":
       `
-        A secure password manager for IoT devices. With the rise of IoT devices, 
-        the cybersecurity of such devices is also a rising concern. This project 
+        A secure password manager for IoT devices. This project 
         was part of CSC454 Business of Software / CSC491 Capstone Design Project. 
-        It consists of a software service to detect IoT devices in the network with 
-        compromised passwords - it uses Pwned Passwords’ API, a database with more than 
+        It is a software service that detects IoT devices in the network with 
+        compromised passwords. It leverages Pwned Passwords’ API, a database with more than 
         600m real-world passwords previously exposed in data breaches. The project also 
-        contains a prototype with a web application dashboard where users can easily 
-        manage their IoT devices’ passwords.
+        contains a web application prototype where users can easily manage their IoT devices’ passwords.
         `,
     "prog_lang": "Python",
     "technologies": "HTML, Jekyll",
     "links": [
-      "https://drive.google.com/file/d/1nrfouAiI4Nj5w4CmTuYdPtAw_1zt7OuP/view?usp=sharing",
-      "https://drive.google.com/file/d/1wZgVMmbb9XtUf3RYMDwjxiE6wx66iSHm/view?usp=sharing",
+      "https://drive.google.com/drive/folders/1SwSdDjxPFChVg55GNZlQpSCcS5aKwm3x?usp=sharing",
       "https://github.com/fernanda-palacios/soteria-app"
     ]
   },
@@ -216,7 +211,7 @@ export const projects = [
         `,
     "technologies": "Framer",
     "links": [
-      "https://drive.google.com/file/d/1TZFhUVhSI2p4t5AYugXj53L7V3-U4qAD/view?usp=sharing"
+      "https://drive.google.com/file/d/1P5lD8agcqHJ9reJ3zWBdJHzZUqsFQuBJ/view?usp=sharing"
     ]
   }
 ]
