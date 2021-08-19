@@ -15,7 +15,7 @@ const AboutTwo = () => {
                     <div
                       className="main"
                       style={{
-                        backgroundImage: `url(${process.env.PUBLIC_URL + "img/about/2.jpg"
+                        backgroundImage: `url(${process.env.PUBLIC_URL + "img/about/photo.jpg  "
                           })`,
                       }}
                     ></div>
@@ -29,22 +29,18 @@ const AboutTwo = () => {
                 <Reveal effect="fadeInLeft">
                   <div className="shane_tm_title">
                     <span>About Me</span>
-                    <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+                    {/* <h3>Lorem Ipsum is simply dummy text of the printing</h3> */}
                   </div>
                   <div className="text">
                     <p>
-                      It is a long established fact that a reader will be distracted by the 
-                      readable content of a page when looking at its layout. The point of 
-                      using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                       as opposed to using 'Content here, content here', making it look like readable English.
-                       Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text
+                    I’m a Computer Science student at the University of Toronto. I am passionate about problem-solving and building technology to help people. I have gained vast experience in software development through the several software engineering internships I’ve done and the many coding projects I’ve worked on. I have also worked in areas such as data science and human-computer interaction. I am incredibly interested in the fields of computation, math and logic and I love building large systems to leverage their power and transform our lives. Other things I love include adventures in nature, listening to music and all kinds of social/cultural activities!
                     </p>
                   </div>
-                  <div className="shane_tm_button">
+                  {/* <div className="shane_tm_button">
                     <a href="img/resume/resume.pdf" download>
                       Download CV
                     </a>
-                  </div>
+                  </div> */}
                 </Reveal>
               </div>
               {/* End right */}
