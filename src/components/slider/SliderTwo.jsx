@@ -10,7 +10,7 @@ const Slider = () => {
             className="image"
             style={{
               backgroundImage: `url(${
-                process.env.PUBLIC_URL + "img/slider/2.jpg"
+                process.env.PUBLIC_URL + "img/slider/photo.png"
               })`,
             }}
           ></div>
