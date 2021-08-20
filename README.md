@@ -1,26 +1,9 @@
-# Tokyo React Personal Portfolio Template
+# Personal website
 
-## Description
-Setup Procedure
-## Project setup
+## Local Development
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run start
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration (vue-cli)
-See [Configuration Reference](https://cli.vuejs.org/config/).
+This project was started from [Shane](https://themeforest.net/item/shane-react-personal-portfolio-template/32642263#), a React template. Several of its React components and the overall styling were modified for personal use.
