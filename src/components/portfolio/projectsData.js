@@ -8,7 +8,8 @@ export const projects = [
         `,
     "prog_lang": 'Javascript, Nodejs',
     "technologies": "React, MaterialUI, MongoDB, Express",
-    "links": ["https://github.com/fernanda-palacios/personal-shopping-app"]
+    "links": ["https://github.com/fernanda-palacios/personal-shopping-app"],
+    "category": "Javascript"
   },
   {
     "title": `

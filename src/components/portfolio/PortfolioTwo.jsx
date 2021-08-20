@@ -53,7 +53,6 @@ const PortfolioTwo = () => {
                                       width="900"
                                       height="900"
                                       style={{ marginBottom: "40px" }}
-                                      alt={project.category}
                                       onClick={() => openProjectViewModal(index)}
                                     />
                                     :
@@ -62,14 +61,13 @@ const PortfolioTwo = () => {
                                       width="900"
                                       height="900"
                                       style={{ marginBottom: "40px" }}
-                                      alt={project.category}
                                       onClick={() => openProjectViewModal(index)}
                                     />}
                                 </a>
                               </div>
                               <div className="mobile_title" style={{ backgroundColor: '#E8E8E8' }}>
-                                <h3>{project.title}</h3>
-                                <span>{project.category}</span>
+                                <h3 style={{marginRight:'5px'}}>{project.title}</h3>
+                                <span style={{color: "#71797E"}}>{project.category}</span>
                               </div>
                             </div>
                           </li>)
