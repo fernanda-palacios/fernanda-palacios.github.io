@@ -39,7 +39,7 @@ const AboutTwo = () => {
                      through the several software engineering internships I’ve done and the
                       many coding projects I’ve worked on. I have also worked in areas such 
                       as data science and human-computer interaction. I am incredibly interested
-                       in the fields of computation, math and logic and I love building large 
+                       in the fields of computation, logic and math and I love building large 
                        systems to leverage their power and transform our lives. Other things I 
                        love include adventures in nature, listening to music and all kinds of 
                        social/cultural activities!

@@ -6,7 +6,7 @@ export const projects = [
         A web application where users can create and organize their personal shopping lists by categories 
         as well as create wish lists of the products they like (similar to ‘Amazon Lists’).
         `,
-    "prog_lang": 'Javascript, Nodejs',
+    "prog_lang": 'Javascript',
     "technologies": "React, MaterialUI, MongoDB, Express",
     "links": ["https://github.com/fernanda-palacios/personal-shopping-app"],
     "category": "Javascript"
@@ -26,7 +26,8 @@ export const projects = [
          CSV formatted datasets.`,
     "prog_lang": 'Javascript, Python',
     "technologies": "React, Material UI, Mapbox, Django, PostgreSQL, DynamoDB",
-    "links": ["https://drive.google.com/file/d/193mDXXobLwnQvw623UFuNAhlt1OURabk/view?usp=sharing"]
+    "links": ["https://drive.google.com/file/d/193mDXXobLwnQvw623UFuNAhlt1OURabk/view?usp=sharing"],
+    "category": "Javascript, Python"
   },
   {
     "title": "Checkout calculator",
@@ -43,10 +44,11 @@ export const projects = [
     "links": [
       "https://github.com/fernanda-palacios/checkout-calc-web",
       "https://github.com/fernanda-palacios/checkout-calc-mobile"
-    ]
+    ],
+    "category": "Javascript"
   },
   {
-    "title": "Data analysis - Covid in South Korea",
+    "title": "Data analysis: Covid in South Korea",
     "description":
       `
         This project was based on a Dataset from Kaggle, from KCDC 
@@ -60,7 +62,8 @@ export const projects = [
     "technologies": "SQL",
     "links": [
       "https://github.com/fernanda-palacios/kaggle-covid-south-korea ",
-    ]
+    ],
+    "category": "SQL"
   },
   {
     "title": "Movie review app",
@@ -72,11 +75,12 @@ export const projects = [
         Database (TMDb)’s API or view a dashboard with metrics such as the most 
         discussed movies.
         `,
-    "prog_lang": "Javascript, Nodejs",
+    "prog_lang": "Javascript",
     "technologies": "HTML, CSS, Bootstrap, Express, MongoDB",
     "links": [
       "https://github.com/fernanda-palacios/movie-review-app "
-    ]
+    ],
+    "category": "Javascript"
   },
   {
     "title": "Pizza Parlour CLI app",
@@ -92,7 +96,8 @@ export const projects = [
     "technologies": "Click, Flask",
     "links": [
       "https://github.com/fernanda-palacios/pizza-parlour-cli "
-    ]
+    ],
+    "category": "Python"
   },
   {
     "title": "Indivisualize",
@@ -108,7 +113,8 @@ export const projects = [
     "technologies": "Shiny, Tidytext",
     "links": [
       "https://github.com/fernanda-palacios/indivisualize"
-    ]
+    ],
+    "category": "R"
   },
   {
     "title": "Image organizer app",
@@ -124,7 +130,8 @@ export const projects = [
     "technologies": "JavaFX, FXML",
     "links": [
       "https://github.com/fernanda-palacios/image-organizer-app"
-    ]
+    ],
+    "category": "Java"
   },
   {
     "title": "Mancala game",
@@ -137,7 +144,8 @@ export const projects = [
     "prog_lang": "C",
     "links": [
       "https://github.com/fernanda-palacios/mancala-game"
-    ]
+    ],
+    "category": "C"
   },
   {
     "title": "Music Visualizer",
@@ -150,7 +158,8 @@ export const projects = [
     "technologies": "Verilog (Hardware Description Language)",
     "links": [
       "https://github.com/fernanda-palacios/music-visualizer"
-    ]
+    ],
+    "category": "Verilog"
   },
   {
     "title": "Text sentiment analysis",
@@ -164,7 +173,8 @@ export const projects = [
     "technologies": "Tidytext, ggplot2",
     "links": [
       "https://github.com/fernanda-palacios/text-sentiment-analysis"
-    ]
+    ],
+    "category": "R"
   },
   {
     "title": "IoT password manager",
@@ -182,14 +192,15 @@ export const projects = [
     "links": [
       "https://drive.google.com/drive/folders/1SwSdDjxPFChVg55GNZlQpSCcS5aKwm3x?usp=sharing",
       "https://github.com/fernanda-palacios/soteria-app"
-    ]
+    ],
+    "category": "Python"
   },
   {
-    "title": "Airbnb R package",
+    "title": "Airbnb package",
     "description":
       `
-      This project uses a dataset of Airbnb listings in Amsterdam and 
-      it provides travellers with information regarding housing options 
+      An R package which uses a dataset of Airbnb listings in Amsterdam and 
+      provides travellers with information regarding housing options 
       under different criteria. For instance, it can list out Airbnb's average 
       prices per neighbourhood or listings in a given price range and with a given 
       number of bedrooms.
@@ -197,7 +208,8 @@ export const projects = [
     "prog_lang": "R",
     "links": [
       "https://github.com/fernanda-palacios/airbnb-r-package"
-    ]
+    ],
+    "category": "R"
   },
   {
     "title": "UoftT Connect",
@@ -213,6 +225,7 @@ export const projects = [
     "technologies": "Framer",
     "links": [
       "https://drive.google.com/file/d/1P5lD8agcqHJ9reJ3zWBdJHzZUqsFQuBJ/view?usp=sharing"
-    ]
+    ],
+    "category": "UX/UI Design"
   }
 ]
