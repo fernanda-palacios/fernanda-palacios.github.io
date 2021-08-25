@@ -66,8 +66,8 @@ const PortfolioTwo = () => {
                                 </a>
                               </div>
                               <div className="mobile_title" style={{ backgroundColor: '#E8E8E8' }}>
-                                <h3 style={{marginRight:'5px'}}>{project.title}</h3>
-                                <span style={{color: "#71797E"}}>{project.category}</span>
+                                <h3 style={{ marginRight: '5px' }}>{project.title}</h3>
+                                <span style={{ color: "#71797E" }}>{project.category}</span>
                               </div>
                             </div>
                           </li>)
@@ -116,17 +116,17 @@ const PortfolioTwo = () => {
                         <b style={{ color: 'black' }}>Technologies: </b>{projects[currProject].technologies}
                       </p>
                     )}
-                    <div>
-                      <p style={{ marginTop: '20px' }}>
+                    <div style={{ display: "flex", marginTop: '20px' }}>
+                      <p style={{ paddingRight: "8px" }}>
                         <b style={{ color: 'black' }}>Link(s):</b></p>
-                      <ul>
-                        {projects[currProject].links.map((link) =>
+                      <ul style={{ display: "flex" }}>
+                        {projects[currProject].links.map((link, index) =>
 
                         (
-                          <li style={{ listStyle: "none" }}>
-                            <a 
-                            target="_blank" rel="noopener noreferrer"
-                            style={{ color: "#6A8FD0" }} href={link}>{link}</a>
+                          <li style={{ listStyle: "none", paddingRight: '8px' }}>
+                            <a
+                              target="_blank" rel="noopener noreferrer"
+                              style={{ color: "#6A8FD0",  whiteSpace: "nowrap" }} href={link.href}>{`${link.name}${index == projects[currProject].links.length - 1 ? "" : ","}`}</a>
                           </li>
                         ))}
                       </ul>
@@ -138,7 +138,7 @@ const PortfolioTwo = () => {
                 {/* compressed version, different margins */}
                 {(currProject === 1 || currProject == 11) &&
                   (
-                    <div >
+                    <div style={{ marginTop: "10px" }}>
                       {projects[currProject].prog_lang && (
                         <p style={{ marginTop: '1px' }}>
                           <b style={{ color: 'black' }}>Programming Languages: </b>{projects[currProject].prog_lang}
@@ -149,17 +149,17 @@ const PortfolioTwo = () => {
                           <b style={{ color: 'black' }}>Technologies: </b>{projects[currProject].technologies}
                         </p>
                       )}
-                      <div>
-                        <p style={{ marginTop: '1px' }}>
+                      <div style={{ display: "flex", marginTop: '1px' }}>
+                        <p style={{ paddingRight: "8px" }}>
                           <b style={{ color: 'black' }}>Link(s):</b></p>
-                        <ul>
-                          {projects[currProject].links.map((link) =>
+                        <ul style={{ display: "flex" }}>
+                          {projects[currProject].links.map((link, index) =>
 
                           (
-                            <li style={{ listStyle: "none", marginTop: '0px' }}>
-                              <a 
-                              target="_blank" rel="noopener noreferrer"
-                              style={{ color: "#6A8FD0" }} href={link}>{link}</a>
+                            <li style={{ listStyle: "none", marginTop: '0px', paddingRight: '8px' }}>
+                              <a
+                                target="_blank" rel="noopener noreferrer"
+                                style={{ color: "#6A8FD0", whiteSpace: "nowrap"}} href={link.href}>{`${link.name}${index == projects[currProject].links.length - 1 ? "" : ","}`}</a>
                             </li>
                           ))}
                         </ul>

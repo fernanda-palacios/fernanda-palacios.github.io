@@ -8,7 +8,12 @@ export const projects = [
         `,
     "prog_lang": 'Javascript',
     "technologies": "React, MaterialUI, MongoDB, Express",
-    "links": ["https://github.com/fernanda-palacios/personal-shopping-app"],
+    "links": [
+      {
+        "href": "https://github.com/fernanda-palacios/personal-shopping-app",
+        "name": "Source Code"
+      }
+    ],
     "category": "Javascript"
   },
   {
@@ -26,7 +31,12 @@ export const projects = [
          CSV formatted datasets.`,
     "prog_lang": 'Javascript, Python',
     "technologies": "React, Material UI, Mapbox, Django, PostgreSQL, DynamoDB",
-    "links": ["https://drive.google.com/file/d/193mDXXobLwnQvw623UFuNAhlt1OURabk/view?usp=sharing"],
+    "links": [
+      {
+        "name": "Demo",
+        "href": "https://drive.google.com/file/d/193mDXXobLwnQvw623UFuNAhlt1OURabk/view?usp=sharing"
+      }
+    ],
     "category": "Javascript, Python"
   },
   {
@@ -42,8 +52,10 @@ export const projects = [
     "prog_lang": 'Javascript (web and mobile)',
     "technologies": "React, Firebase (web) / React Native, Firebase (mobile)",
     "links": [
-      "https://github.com/fernanda-palacios/checkout-calc-web",
-      "https://github.com/fernanda-palacios/checkout-calc-mobile"
+      { "name": "Source Code (web)", "href": "https://github.com/fernanda-palacios/checkout-calc-web" },
+      { "name": "Live Demo (web)", "href": "https://checkout-calc-app.herokuapp.com/" },
+      { "name": "Source Code (mobile)", "href": "https://github.com/fernanda-palacios/checkout-calc-mobile" },
+      { "name": "Demo (mobile)", "href": "https://drive.google.com/file/d/1rap7qudm292U7E3i2nU2_eISa7_B0LxW/view?usp=sharing" }
     ],
     "category": "Javascript"
   },
@@ -61,7 +73,7 @@ export const projects = [
         `,
     "technologies": "SQL",
     "links": [
-      "https://github.com/fernanda-palacios/kaggle-covid-south-korea ",
+      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/kaggle-covid-south-korea" }
     ],
     "category": "SQL"
   },
@@ -78,7 +90,8 @@ export const projects = [
     "prog_lang": "Javascript",
     "technologies": "HTML, CSS, Bootstrap, Express, MongoDB",
     "links": [
-      "https://github.com/fernanda-palacios/movie-review-app "
+      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/movie-review-app" },
+      { "name": "Live Demo", "href": "https://what-a-movie.herokuapp.com/" }
     ],
     "category": "Javascript"
   },
@@ -95,7 +108,7 @@ export const projects = [
     "prog_lang": "Python",
     "technologies": "Click, Flask",
     "links": [
-      "https://github.com/fernanda-palacios/pizza-parlour-cli "
+      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/pizza-parlour-cli " }
     ],
     "category": "Python"
   },
@@ -112,7 +125,7 @@ export const projects = [
     "prog_lang": "R",
     "technologies": "Shiny, Tidytext",
     "links": [
-      "https://github.com/fernanda-palacios/indivisualize"
+      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/indivisualize" }
     ],
     "category": "R"
   },
@@ -129,7 +142,7 @@ export const projects = [
     "prog_lang": "Java",
     "technologies": "JavaFX, FXML",
     "links": [
-      "https://github.com/fernanda-palacios/image-organizer-app"
+      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/image-organizer-app" }
     ],
     "category": "Java"
   },
@@ -143,7 +156,7 @@ export const projects = [
         `,
     "prog_lang": "C",
     "links": [
-      "https://github.com/fernanda-palacios/mancala-game"
+      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/mancala-game" }
     ],
     "category": "C"
   },
@@ -157,7 +170,7 @@ export const projects = [
         `,
     "technologies": "Verilog (Hardware Description Language)",
     "links": [
-      "https://github.com/fernanda-palacios/music-visualizer"
+      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/music-visualizer" }
     ],
     "category": "Verilog"
   },
@@ -172,7 +185,7 @@ export const projects = [
     "prog_lang": "R",
     "technologies": "Tidytext, ggplot2",
     "links": [
-      "https://github.com/fernanda-palacios/text-sentiment-analysis"
+      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/text-sentiment-analysis" }
     ],
     "category": "R"
   },
@@ -190,8 +203,9 @@ export const projects = [
     "prog_lang": "Python",
     "technologies": "HTML, Jekyll",
     "links": [
-      "https://drive.google.com/drive/folders/1SwSdDjxPFChVg55GNZlQpSCcS5aKwm3x?usp=sharing",
-      "https://github.com/fernanda-palacios/soteria-app"
+      { "name": "Demo (Scanner)", "href": "https://drive.google.com/drive/folders/1SwSdDjxPFChVg55GNZlQpSCcS5aKwm3x?usp=sharing" },
+      { "name": "Source Code (Web App Prototype)", "href": "https://github.com/fernanda-palacios/soteria-app" },
+      { "name": "Live Demo (Web App Prototype)", "href": "https://fernanda-palacios.github.io/iot-password-manager.github.io/" }
     ],
     "category": "Python"
   },
@@ -207,7 +221,7 @@ export const projects = [
         `,
     "prog_lang": "R",
     "links": [
-      "https://github.com/fernanda-palacios/airbnb-r-package"
+      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/airbnb-r-package" }
     ],
     "category": "R"
   },
@@ -224,7 +238,7 @@ export const projects = [
         `,
     "technologies": "Framer",
     "links": [
-      "https://drive.google.com/file/d/1P5lD8agcqHJ9reJ3zWBdJHzZUqsFQuBJ/view?usp=sharing"
+      { "name": "Demo", "href": "https://drive.google.com/file/d/1P5lD8agcqHJ9reJ3zWBdJHzZUqsFQuBJ/view?usp=sharing" }
     ],
     "category": "UX/UI Design"
   }
