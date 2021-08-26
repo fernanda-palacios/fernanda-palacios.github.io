@@ -142,7 +142,9 @@ export const projects = [
     "prog_lang": "Java",
     "technologies": "JavaFX, FXML",
     "links": [
-      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/image-organizer-app" }
+      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/image-organizer-app" },
+      { "name": "Demo", href: "https://drive.google.com/file/d/1WkAoYL-t4U9RjNTO6sXe3ABuXzbNkw2V/view?usp=sharing" }
+
     ],
     "category": "Java"
   },
