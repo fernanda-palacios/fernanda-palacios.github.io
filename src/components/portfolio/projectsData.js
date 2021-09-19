@@ -3,8 +3,10 @@ export const projects = [
     "title": "Personal Shopping App",
     "description":
       `
-        A web application where users can create and organize their personal shopping lists by categories 
-        as well as create wish lists of the products they like (similar to ‘Amazon Lists’).
+      A full-stack shopping list application which enabled a functional minimum viable product for the startup team Donavi at UofT’s Engineering Hatchery Summer Program.
+
+      It also contains a multi-step onboarding flow to gather user information for a personalized shopping recommendation engine
+      
         `,
     "prog_lang": 'Javascript',
     "technologies": "React, MaterialUI, MongoDB, Express",
@@ -43,14 +45,12 @@ export const projects = [
     "title": "Checkout calculator",
     "description":
       `
-        A checkout calculator to calculate the total price of a group of items based on
-         their respective quantities, prices. A user can also specify a tax or discount
-          rate to be applied at checkout. Implemented a web app version and a mobile app
-          version of such calculator.
-
+      A checkout calculator where users can add items and calculate their total price based on 
+      their respective quantities, prices, taxes and discounts. Implemented a web app 
+      version and a mobile app version of such calculator.
         `,
     "prog_lang": 'Javascript (web and mobile)',
-    "technologies": "React, Firebase (web) / React Native, Firebase (mobile)",
+    "technologies": "React, Firebase (web) / React Native, Firebase, Expo (mobile)",
     "links": [
       { "name": "Source Code (web)", "href": "https://github.com/fernanda-palacios/checkout-calc-web" },
       { "name": "Live Demo (web)", "href": "https://checkout-calc-app.herokuapp.com/" },
@@ -133,10 +133,11 @@ export const projects = [
     "title": "Image organizer app",
     "description":
       `
-        A JavaFX desktop app where users can upload and manage their photos. 
-        For example, users can group photos into folders, tag photos and search by tags.
-          The app also contains a logging system and allows users to view their past 
-          activity or revert changes. 
+      A JavaFX desktop app where users can upload and manage their photos. 
+      For example, users can group photos into folders, tag photos and search by tags.  
+      The app also contains a logging system and allows users to view their past activity 
+      or revert changes. The focus was on using a Model-View-Control Framework as well as 
+      Objected-Oriented Design Patterns such as Observers/Observables and Factory Classes.
 
         `,
     "prog_lang": "Java",
@@ -152,9 +153,9 @@ export const projects = [
     "title": "Mancala game",
     "description":
       `
-        A mancala CLI game application where users can connect to a server
-         and play the famous and fun game of mancala. The app is built with C
-          and uses sockets to establish the connection and communication between players.
+      A mancala CLI game application where users can connect to a server and play 
+      the famous and fun game of mancala. Implemented the application in C and 
+      used sockets as the medium of communication between players.
         `,
     "prog_lang": "C",
     "links": [
