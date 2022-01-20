@@ -5,6 +5,7 @@ import Modal from "react-modal";
 import { projects } from './projectsData';
 
 const PortfolioTwo = () => {
+  const projectsCompressedStyling = {5: true, 15: true} //city of toronto, iotpm
 
   const [isOpenModal, setIsOpenModal] = useState(false);
   const [currProject, setCurrProject] = useState(undefined);
@@ -47,15 +48,7 @@ const PortfolioTwo = () => {
                                 <a> {/* project image popup */}
 
                                   {/* project image homepage */}
-                                  {index == 20 ?
-                                    <img
-                                      src={`/img/portfolio/${index}.svg`}
-                                      width="900"
-                                      height="900"
-                                      style={{ marginBottom: "40px" }}
-                                      onClick={() => openProjectViewModal(index)}
-                                    />
-                                    :
+                                  {
                                     <img
                                       src={`/img/portfolio/${index}.png`}
                                       width="900"
@@ -103,8 +96,8 @@ const PortfolioTwo = () => {
                   {projects[currProject].description}
                 </p>
 
-                {/* normal version */}
-                {!(currProject === 1 || currProject == 11) &&
+                {/* normal version bullet points */}
+                {!(currProject in projectsCompressedStyling) &&
                   (<div>
                     {projects[currProject].prog_lang && (
                       <p style={{ marginTop: '20px' }}>
@@ -116,6 +109,7 @@ const PortfolioTwo = () => {
                         <b style={{ color: 'black' }}>Technologies: </b>{projects[currProject].technologies}
                       </p>
                     )}
+                    {projects[currProject].links && (
                     <div style={{ display: "flex", marginTop: '20px' }}>
                       <p style={{ paddingRight: "8px" }}>
                         <b style={{ color: 'black' }}>Link(s):</b></p>
@@ -131,12 +125,18 @@ const PortfolioTwo = () => {
                         ))}
                       </ul>
 
-                    </div>
+                    </div>)}
+                    {projects[currProject].onRequest && (
+                      <p style={{ marginTop: '20px' }}>
+                        <b style={{ color: 'black' }}>Source Code: </b>available on request
+                      </p>
+                    )}
+                    
                   </div>)}
 
 
-                {/* compressed version, different margins */}
-                {(currProject === 1 || currProject == 11) &&
+                {/* compressed version, different margins bullet points */}
+                {(currProject in projectsCompressedStyling) &&
                   (
                     <div style={{ marginTop: "10px" }}>
                       {projects[currProject].prog_lang && (
@@ -149,6 +149,8 @@ const PortfolioTwo = () => {
                           <b style={{ color: 'black' }}>Technologies: </b>{projects[currProject].technologies}
                         </p>
                       )}
+
+                      {projects[currProject].links && (                      
                       <div style={{ display: "flex", marginTop: '1px' }}>
                         <p style={{ paddingRight: "8px" }}>
                           <b style={{ color: 'black' }}>Link(s):</b></p>
@@ -163,8 +165,7 @@ const PortfolioTwo = () => {
                             </li>
                           ))}
                         </ul>
-
-                      </div>
+                      </div>)}
                     </div>)}
               </div>
             </div>
