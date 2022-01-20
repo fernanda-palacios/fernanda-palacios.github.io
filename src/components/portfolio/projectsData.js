@@ -14,12 +14,12 @@ export const projects = [
     "category": "Python, C"
   },  
   {
-    "title": "Message Queues Synchronization ",
+    "title": "Queues Synchronization",
     "description":
       `      
-      Completed the implementation of a message queue by adding the necessary locks and condition variables
-       operations to synchronize access to the message queue. These message queues could be used in many 
-       settings including the creation of any number of message queues with any number of reader and/or writer
+      Completed the implementation of a message queue system by adding the necessary locks and condition variables
+       operations to synchronize access to a message queue. This system could be used in many 
+       settings including the creation of multiple queues with any number of reader and/or writer
         handles acting on a given queue. Also implemented I/O multiplexing functionality for the message queues,
          modeled after the poll() system call. 
       
@@ -32,15 +32,15 @@ export const projects = [
     "title": "File system implementation",
     "description":
       `      
-        Design and implemented an extent-based, ext2 file system in C, using FUSE to mount the file system and supporting the following operations:
+        Designed and implemented an extent-based, ext2 file system in C. Used FUSE to mount the file system and supported the following operations:
 
 
-        •	formatting a disk image 
-        •	creating and deleting directories 
-        •	creating and deleting files 
-        •	displaying metadata about a file or directory 
-        •	setting the size of a file
-        •	writing data to files and reading data from files
+        formatting a disk image,
+        creating and deleting directories, 
+        creating and deleting files, 
+        displaying metadata about a file or directory, 
+        setting the size of a file, and
+        writing data to files as well as reading data from files.
       
         `,
     "prog_lang": 'C',
