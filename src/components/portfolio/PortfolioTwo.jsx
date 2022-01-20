@@ -5,7 +5,7 @@ import Modal from "react-modal";
 import { projects } from './projectsData';
 
 const PortfolioTwo = () => {
-  const projectsCompressedStyling = {4: true, 14: true} //city of toronto, iotpm
+  const projectsCompressedStyling = {5: true, 15: true} //city of toronto, iotpm
 
   const [isOpenModal, setIsOpenModal] = useState(false);
   const [currProject, setCurrProject] = useState(undefined);

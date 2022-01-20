@@ -1,5 +1,19 @@
 export const projects = [
   {
+    "title": "Router ",
+    "description":
+      `      
+      A router implementation in a simulated mininet network topology using C.
+       The implementation followed the internet protocols: Ethernet, IP, ICMP, ARP, TCP/UDP
+        to perform the routing logic such as sending replies, forwarding packets, validating packets,
+         and managing an ARP cache.
+        `,
+    "prog_lang": "C",
+    "technologies": "Mininet",
+    onRequest: true,
+    "category": "C"
+  },  
+  {
     "title": "Virtual Memory ",
     "description":
       `      

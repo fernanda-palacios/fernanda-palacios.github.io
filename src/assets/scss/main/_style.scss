@@ -649,8 +649,8 @@ h6 {
 }
 .shane_tm_hero .content h3 {
   position: relative;
-  font-size: 72px;
-  font-family: "Montserrat";
+  font-size: 78px;
+  font-family: "Poppins";
   text-transform: uppercase;
   font-weight: 900;
   color: #000;
@@ -660,7 +660,7 @@ h6 {
 }
 .shane_tm_hero .content h3 span {
   color: transparent;
-  -webkit-text-stroke: 1px #000;
+  -webkit-text-stroke: 2px #000;
   padding-left: 2px;
   @media screen and (max-width: 767px) {
     -webkit-text-stroke: 1px #fff;
