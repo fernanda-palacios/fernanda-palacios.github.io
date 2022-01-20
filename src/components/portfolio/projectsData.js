@@ -1,5 +1,54 @@
 export const projects = [
   {
+    "title": "Virtual Memory ",
+    "description":
+      `      
+      Peformed an analysis of memory access patterns of virtual pages for several programs using Python.
+       Also implemented the operation of virtual memory translation through a three-level pagetable in C.
+        Lastly, implemented several page replacement algorithms such as  FIFO, LRU, MRU, CLOCK that could
+         be used as part of the translation process and compared their performance  in terms of their hit
+          rate and number of evictions.      
+        `,
+    "prog_lang": "Python, C",
+    onRequest: true,
+    "category": "Python, C"
+  },  
+  {
+    "title": "Message Queues Synchronization ",
+    "description":
+      `      
+      Completed the implementation of a message queue by adding the necessary locks and condition variables
+       operations to synchronize access to the message queue. These message queues could be used in many 
+       settings including the creation of any number of message queues with any number of reader and/or writer
+        handles acting on a given queue. Also implemented I/O multiplexing functionality for the message queues,
+         modeled after the poll() system call. 
+      
+        `,
+    "prog_lang": 'C',
+    onRequest: true,
+    "category": "C"
+  },
+  {
+    "title": "File system implementation",
+    "description":
+      `      
+        Design and implemented an extent-based, ext2 file system in C, using FUSE to mount the file system and supporting the following operations:
+
+
+        •	formatting a disk image 
+        •	creating and deleting directories 
+        •	creating and deleting files 
+        •	displaying metadata about a file or directory 
+        •	setting the size of a file
+        •	writing data to files and reading data from files
+      
+        `,
+    "prog_lang": 'C',
+    "technologies": "FUSE",    
+    onRequest: true,
+    "category": "C"
+  },
+  {
     "title": "Personal Shopping App",
     "description":
       `
