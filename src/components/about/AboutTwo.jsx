@@ -45,11 +45,11 @@ const AboutTwo = () => {
                        social/cultural activities!
                     </p>
                   </div>
-                  {/* <div className="shane_tm_button">
+                  <div className="shane_tm_button" >                    
                     <a href="img/resume/resume.pdf" download>
-                      Download CV
-                    </a>
-                  </div> */}
+                      Resume                      
+                    </a>                                         
+                  </div>
                 </Reveal>
               </div>
               {/* End right */}

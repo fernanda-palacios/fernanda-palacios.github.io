@@ -918,12 +918,13 @@ body.loaded .overlay_effect:after {
   color: #fff;
   background-color: #000;
   display: inline-block;
-  padding: 13px 48px;
+  padding: 5px 13px;
+  font-size: 13px;
   border: 2px solid #000;
   font-family: "Poppins";
   transition: all 0.5s cubic-bezier(0, 0, 0.1, 1);
   @media screen and (max-width: 992px) {
-    padding: 8px 25px;
+    padding: 5px 13px;
   }
 }
 .shane_tm_button a:hover {

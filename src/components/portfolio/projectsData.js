@@ -43,7 +43,7 @@ export const projects = [
     "category": "C"
   },
   {
-    "title": "File system implementation",
+    "title": "File system",
     "description":
       `      
         A design and implementation of an extent-based, ext2 file system in C. Used FUSE to mount the file system and supported the following operations:
