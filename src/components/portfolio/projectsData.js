@@ -1,5 +1,59 @@
 export const projects = [
   {
+    "title": "Personal Shopping App",
+    "description":
+      `
+      A full-stack shopping list application which enabled a functional minimum viable product for the startup team Donavi at UofT’s Engineering Hatchery Summer Program.
+
+      It also contains a multi-step onboarding flow to gather user information for a personalized shopping recommendation engine.
+      
+        `,
+    "prog_lang": 'Javascript',
+    "technologies": "React, MaterialUI, MongoDB, Express",
+    "links": [
+      {
+        "href": "https://github.com/fernanda-palacios/personal-shopping-app",
+        "name": "Source Code"
+      }
+    ],
+    "category": "Javascript"
+  },
+  {
+    "title": `
+        Project for the City of Toronto`,
+    "description":
+      `
+        This project was part of CSC301 Software Engineering where our team built an application 
+        for the Transportation Data & Analytics team at the City of Toronto. 
+         It is a web application where consultants can acquire traffic data from 
+         street segments in Toronto.  Users can create traffic data requests by drawing 
+         complex routes on a map and specifying date ranges or metrics to be included.  
+         Queries are automatically validated and modified based on available traffic data 
+         from the team’s big data repositories, and users can then download their requested 
+         CSV formatted datasets.`,
+    "prog_lang": 'Javascript, Python',
+    "technologies": "React, Material UI, Mapbox, Django, PostgreSQL, DynamoDB",
+    "links": [
+      {
+        "name": "Demo",
+        "href": "https://drive.google.com/file/d/193mDXXobLwnQvw623UFuNAhlt1OURabk/view?usp=sharing"
+      }
+    ],
+    "category": "Javascript, Python"
+  },
+  {
+    "title": "Interpreters",
+    "description": `An implementation of three different interpreters or evaluators using Racket
+    for an extended Lambda Calculus. The first one is an  Eager By-Value Algebraic Evaluator (EVA) 
+    where evaluation consists primarily of a function's body substitution with the argument value 
+    (for function calls). The second one is an Eager By-Value Environmental Evaluator (EVE) which 
+    extends this to include environments and scopes. The third one is an Eager By-Value Stateful Evaluator 
+    (EVO) which further extends the latter, incorporating variable mutation.`,
+    "prog_lang": "Racket",
+    onRequest: true,
+    "category": "Racket"
+  },
+  {
     "title": "Router ",
     "description":
       `      
@@ -61,48 +115,6 @@ export const projects = [
     "technologies": "FUSE",    
     onRequest: true,
     "category": "C"
-  },
-  {
-    "title": "Personal Shopping App",
-    "description":
-      `
-      A full-stack shopping list application which enabled a functional minimum viable product for the startup team Donavi at UofT’s Engineering Hatchery Summer Program.
-
-      It also contains a multi-step onboarding flow to gather user information for a personalized shopping recommendation engine
-      
-        `,
-    "prog_lang": 'Javascript',
-    "technologies": "React, MaterialUI, MongoDB, Express",
-    "links": [
-      {
-        "href": "https://github.com/fernanda-palacios/personal-shopping-app",
-        "name": "Source Code"
-      }
-    ],
-    "category": "Javascript"
-  },
-  {
-    "title": `
-        Project for the City of Toronto`,
-    "description":
-      `
-        This project was part of CSC301 Software Engineering where our team built an application 
-        for the Transportation Data & Analytics team at the City of Toronto. 
-         It is a web application where consultants can acquire traffic data from 
-         street segments in Toronto.  Users can create traffic data requests by drawing 
-         complex routes on a map and specifying date ranges or metrics to be included.  
-         Queries are automatically validated and modified based on available traffic data 
-         from the team’s big data repositories, and users can then download their requested 
-         CSV formatted datasets.`,
-    "prog_lang": 'Javascript, Python',
-    "technologies": "React, Material UI, Mapbox, Django, PostgreSQL, DynamoDB",
-    "links": [
-      {
-        "name": "Demo",
-        "href": "https://drive.google.com/file/d/193mDXXobLwnQvw623UFuNAhlt1OURabk/view?usp=sharing"
-      }
-    ],
-    "category": "Javascript, Python"
   },
   {
     "title": "Checkout calculator",

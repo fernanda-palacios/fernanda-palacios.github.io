@@ -5,7 +5,7 @@ import Modal from "react-modal";
 import { projects } from './projectsData';
 
 const PortfolioTwo = () => {
-  const projectsCompressedStyling = {5: true, 15: true} //city of toronto, iotpm
+  const projectsCompressedStyling = {1: true, 16: true} //city of toronto, iotpm
 
   const [isOpenModal, setIsOpenModal] = useState(false);
   const [currProject, setCurrProject] = useState(undefined);
@@ -151,7 +151,7 @@ const PortfolioTwo = () => {
                       )}
 
                       {projects[currProject].links && (                      
-                      <div style={{ display: "flex", marginTop: '1px' }}>
+                      <div style={{ display: "flex", marginTop: '1px', paddingBottom:'20px'}}>
                         <p style={{ paddingRight: "8px" }}>
                           <b style={{ color: 'black' }}>Link(s):</b></p>
                         <ul style={{ display: "flex" }}>
