@@ -20,7 +20,7 @@ export const projects = [
   },
   {
     "title": `
-        Project for the City of Toronto`,
+        City of Toronto Project`,
     "description":
       `
         This project was part of CSC301 Software Engineering where our team built an application 
