@@ -68,6 +68,30 @@ export const projects = [
     "category": "C"
   },  
   {
+    title: "FunPuzz CSP",
+    description: `A project on Constraint Satisfaction Problems (CSP’s) in AI which implements two 
+    constraint propagators (Forward Checking and Generalized Arc Consistency), as well as models
+     the FunPuzz game as a CSP using binary and non-binary constraints to solve it and compare the
+      performance of these solutions.`,
+    "prog_lang": "Python",
+    onRequest: true,
+    "category": "Python",
+    "links": [
+      { "name": "Demo", "href": "https://drive.google.com/file/d/1u_Cpl__ZhmgisjzeEU-Tm7Zyx1gJ4P0-/view?usp=sharing"}
+    ],
+  },
+  {
+    title: "Othello Player",
+    description: `An AI agent player for the game Othello. It uses the Minimax algorithm to play,
+     along with Alpha-Beta Pruning, a depth limit for the search for a faster search, state caching
+      and a node ordering heuristic. It can be quite hard to play against as shown in the demo!`,
+    onRequest: true,
+    "category": "Python",
+    "links": [
+      { "name": "Demo", "href": "https://drive.google.com/file/d/1EQjuErBJYFETZL8SZ-EJzEY4JXN0FZ46/view?usp=sharing"}
+    ],
+  },
+  {
     "title": "Virtual Memory ",
     "description":
       `      
@@ -115,24 +139,6 @@ export const projects = [
     "technologies": "FUSE",    
     onRequest: true,
     "category": "C"
-  },
-  {
-    "title": "Checkout calculator",
-    "description":
-      `
-      A checkout calculator where users can add items and calculate their total price based on 
-      their respective quantities, prices, taxes and discounts. Implemented a web app 
-      version and a mobile app version of such calculator.
-        `,
-    "prog_lang": 'Javascript (web and mobile)',
-    "technologies": "React, Firebase (web) / React Native, Firebase, Expo (mobile)",
-    "links": [
-      { "name": "Source Code (web)", "href": "https://github.com/fernanda-palacios/checkout-calc-web" },
-      { "name": "Live Demo (web)", "href": "https://checkout-calc-app.herokuapp.com/" },
-      { "name": "Source Code (mobile)", "href": "https://github.com/fernanda-palacios/checkout-calc-mobile" },
-      { "name": "Demo (mobile)", "href": "https://drive.google.com/file/d/1rap7qudm292U7E3i2nU2_eISa7_B0LxW/view?usp=sharing" }
-    ],
-    "category": "Javascript"
   },
   {
     "title": "Data analysis: Covid in South Korea",
