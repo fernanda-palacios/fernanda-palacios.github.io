@@ -46,7 +46,7 @@ const AboutTwo = () => {
                     </p>
                   </div>
                   <div className="shane_tm_button" >                    
-                    <a href="img/resume/resume.pdf" download>
+                    <a href="img/resume/Fernanda_Palacios_Resume.pdf" download>
                       Resume                      
                     </a>                                         
                   </div>
