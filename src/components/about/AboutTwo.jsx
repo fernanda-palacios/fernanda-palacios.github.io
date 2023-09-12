@@ -33,16 +33,14 @@ const AboutTwo = () => {
                   </div>
                   <div className="text">
                     <p>
-                    I’m a Computer Science student at the University of Toronto. 
-                    I am passionate about problem-solving and building technology 
-                    to help people. I have gained vast experience in software development
+                    I’m a Computer Science graduate from the University of Toronto. 
+                    I am passionate about problem-solving and harnessing technology for positive global impact. I have gained vast experience in software development
                      through the several software engineering internships I’ve done and the
                       many coding projects I’ve worked on. I have also worked in areas such 
-                      as data science and human-computer interaction. I am incredibly interested
-                       in the fields of computing, logic and math and I love building large 
-                       systems to leverage their power and transform our lives. Other things I 
-                       love include adventures in nature, listening to music and all kinds of 
-                       social/cultural activities!
+                      as artificial intelligence, data science and human-computer interaction. My fascination for
+                       the fields of computing, logic and mathematics fuels my enthusiasm for building large 
+                       systems to catalyze transformative change in our lives. Other things I 
+                       love include working out, listening to music and spending time with friends and family!
                     </p>
                   </div>
                   <div className="shane_tm_button" >                    
