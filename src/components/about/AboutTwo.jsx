@@ -39,7 +39,7 @@ const AboutTwo = () => {
                       many coding projects I’ve worked on. I have also worked in areas such 
                       as artificial intelligence, data science and human-computer interaction. My fascination for
                        the fields of computing, logic and mathematics fuels my enthusiasm for building large 
-                       systems to catalyze transformative change in our lives. Other things I 
+                       systems to transform our lives. Other things I 
                        love include working out, listening to music and spending time with friends and family!
                     </p>
                   </div>
