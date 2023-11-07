@@ -15,7 +15,7 @@ const AboutTwo = () => {
                     <div
                       className="main"
                       style={{
-                        backgroundImage: `url(${process.env.PUBLIC_URL + "img/about/photo_color.jpg  "
+                        backgroundImage: `url(${process.env.PUBLIC_URL + "img/about/photo_about.jpg"
                           })`,
                       }}
                     ></div>
