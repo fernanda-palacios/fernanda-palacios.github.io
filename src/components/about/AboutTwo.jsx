@@ -38,8 +38,7 @@ const AboutTwo = () => {
                      through the several software engineering internships I’ve done and the
                       many coding projects I’ve worked on. I have also worked in areas such 
                       as artificial intelligence, data science and human-computer interaction. My fascination for
-                       the fields of computing, logic and mathematics fuels my enthusiasm for building large 
-                       systems to transform our lives. Other things I 
+                       the fields of computing, logic and mathematics fuels my enthusiasm for building software to transform our lives. Other things I 
                        love include working out, listening to music and spending time with friends and family!
                     </p>
                   </div>
