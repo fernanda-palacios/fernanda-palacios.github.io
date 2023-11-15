@@ -35,18 +35,18 @@ const AboutTwo = () => {
                     <p>
                     I’m a Computer Science graduate from the University of Toronto. 
                     I am passionate about problem-solving and harnessing technology for positive global impact. I have gained vast experience in software development
-                     through the several software engineering internships I’ve done and the
-                      many coding projects I’ve worked on. I have also worked in areas such 
+                     through the several software engineering internships I’ve done and 
+                     many coding projects I’ve worked on. I have also worked in areas such 
                       as artificial intelligence, data science and human-computer interaction. My fascination for
                        the fields of computing, logic and mathematics fuels my enthusiasm for building software to transform our lives. Other things I 
                        love include working out, listening to music and spending time with friends and family!
                     </p>
                   </div>
-                  <div className="shane_tm_button" >                    
+                  {/* <div className="shane_tm_button" >                    
                     <a href="img/resume/Fernanda_Palacios_Resume.pdf" download>
                       Resume                      
                     </a>                                         
-                  </div>
+                  </div> */}
                 </Reveal>
               </div>
               {/* End right */}
