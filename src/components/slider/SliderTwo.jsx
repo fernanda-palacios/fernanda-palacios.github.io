@@ -35,6 +35,9 @@ const Slider = () => {
             </div>
             {/* End designation */}
             <Social />
+            <div style={{background: 'black', textAlign: 'center',  borderRadius: '5px'}}>
+            <h4 style={{marginTop: '50px', color: 'white'}}>Updates coming soon!</h4>
+            </div>
           </div>
           {/* End content */}
 
