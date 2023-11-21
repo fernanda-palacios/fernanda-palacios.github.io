@@ -4,6 +4,7 @@ import Slider from "../../components/slider/SliderTwo";
 import About from "../../components/about/AboutTwo";
 import PortfolioSWE from "../../components/portfolio/PortfolioTwoSWE";
 import PortfolioAI from "../../components/portfolio/PortfolioTwoAI";
+import PortfolioOther from "../../components/portfolio/PortfolioTwoOther";
 import Skills from "../../components/skills/SkillsTwo";
 import Video from "../../components/video/VideoTwo";
 import Brand from "../../components/Brand";
@@ -29,6 +30,9 @@ const HomeTwo = () => {
       {/* End PortfolioSWE Section */}
 
       <PortfolioAI />
+      {/* End PortfolioAI Section */}
+      
+      <PortfolioOther/>
       {/* End PortfolioAI Section */}
 
       {/* <Skills /> */}

@@ -284,22 +284,5 @@ export const projects = [
       { "name": "Source Code", "href": "https://github.com/fernanda-palacios/airbnb-r-package" }
     ],
     "category": "R"
-  },
-  {
-    "title": "UoftT Connect",
-    "description":
-      `
-      This project was part of CSC318 Design of Interactive 
-      Computational Media and its goal was to enhance the social fabric 
-      across the student community.  We designed a mobile app for students to 
-      find and join groups for studying, socializing or extracurricular activities. 
-      Throughout the design process, we conducted user research, developed and tested 
-      various prototypes and developed a high-fidelity prototype using Framer. 
-        `,
-    "technologies": "Framer",
-    "links": [
-      { "name": "Demo", "href": "https://drive.google.com/file/d/1P5lD8agcqHJ9reJ3zWBdJHzZUqsFQuBJ/view?usp=sharing" }
-    ],
-    "category": "UX/UI Design"
   }
 ]

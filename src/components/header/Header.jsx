@@ -42,11 +42,20 @@ const Header = () => {
                 <a href="#about">About</a>
               </li>
               <li>
-                <a href="#SWEprojects">SWE Projects</a>
-              </li>
-              <li>
-                <a href="#AIprojects">AI Projects</a>
-              </li>
+                  <a href="#SWEprojects" onClick={handleClick}>
+                    SWE
+                  </a>
+                </li>
+                <li>
+                  <a href="#AIprojects" onClick={handleClick}>
+                    AI
+                  </a>
+                </li>
+                <li>
+                  <a href="#OtherProjects" onClick={handleClick}>
+                    Other
+                  </a>
+                </li>
               {/* <li>
                 <a href="#news">News</a>
               </li>
@@ -117,12 +126,17 @@ const Header = () => {
                 </li>
                 <li>
                   <a href="#SWEprojects" onClick={handleClick}>
-                    SWE Projects
+                    SWE
                   </a>
                 </li>
                 <li>
                   <a href="#AIprojects" onClick={handleClick}>
-                    AI Projects
+                    AI
+                  </a>
+                </li>
+                <li>
+                  <a href="#OtherProjects" onClick={handleClick}>
+                    Other
                   </a>
                 </li>
                 {/* <li>
