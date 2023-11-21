@@ -42,7 +42,10 @@ const Header = () => {
                 <a href="#about">About</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a href="#SWEprojects">SWE Projects</a>
+              </li>
+              <li>
+                <a href="#AIprojects">AI Projects</a>
               </li>
               {/* <li>
                 <a href="#news">News</a>
@@ -113,8 +116,13 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#projects" onClick={handleClick}>
-                    Projects
+                  <a href="#SWEprojects" onClick={handleClick}>
+                    SWE Projects
+                  </a>
+                </li>
+                <li>
+                  <a href="#AIprojects" onClick={handleClick}>
+                    AI Projects
                   </a>
                 </li>
                 {/* <li>

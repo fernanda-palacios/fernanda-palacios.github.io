@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Tabs, TabPanel } from "react-tabs";
 import SimpleReactLightbox from "simple-react-lightbox";
 import Modal from "react-modal";
-import { projects } from './projectsData';
+import { projects } from './ProjectsDataSWE';
 
-const PortfolioTwo = () => {
-  const projectsCompressedStyling = {1: true, 17: true} //city of toronto, iotpm
+const PortfolioTwoSWE = () => {
+  const projectsCompressedStyling = {1: true, 15: true} //city of toronto, iotpm
 
   const [isOpenModal, setIsOpenModal] = useState(false);
   const [currProject, setCurrProject] = useState(undefined);
@@ -21,7 +21,7 @@ const PortfolioTwo = () => {
   }
 
   return (
-    <div className="shane_tm_section" id="projects">
+    <div className="shane_tm_section" id="SWEprojects">
       <SimpleReactLightbox>
         <div className="shane_tm_portfolio">
           <div className="container">
@@ -29,8 +29,8 @@ const PortfolioTwo = () => {
               <div className="shane_tm_title">
                 <div className="title_flex">
                   <div className="left">
-                    <span>Projects</span>
-                    <h3>Projects</h3>
+                    <span>Software Engineering Projects</span>
+                    <h3>SWE Projects</h3>
                   </div>
                 </div>
               </div>
@@ -39,7 +39,7 @@ const PortfolioTwo = () => {
                   <div className="portfolio_list">
                     <TabPanel>
                       <ul className="gallery_zoom">
-                        {projects.map((project, index) => {
+                        {projects.map((project, index) => {                      
 
                           return (<li>
                             <div className="inner project_hover">
@@ -50,7 +50,7 @@ const PortfolioTwo = () => {
                                   {/* project image homepage */}
                                   {
                                     <img
-                                      src={`/img/portfolio/${index}.png`}
+                                      src={`/img/portfolioSWE/${index}.png`}
                                       width="900"
                                       height="900"
                                       style={{ marginBottom: "40px" }}
@@ -74,6 +74,7 @@ const PortfolioTwo = () => {
           </div>
         </div>
       </SimpleReactLightbox>
+      {/* individual project page */}
       <Modal
         isOpen={isOpenModal}
         onRequestClose={closeProjectViewModal}
@@ -175,4 +176,4 @@ const PortfolioTwo = () => {
   );
 };
 
-export default PortfolioTwo;
+export default PortfolioTwoSWE;

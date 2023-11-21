@@ -2,7 +2,8 @@ import React from "react";
 import Header from "../../components/header/Header";
 import Slider from "../../components/slider/SliderTwo";
 import About from "../../components/about/AboutTwo";
-import Portfolio from "../../components/portfolio/PortfolioTwo";
+import PortfolioSWE from "../../components/portfolio/PortfolioTwoSWE";
+import PortfolioAI from "../../components/portfolio/PortfolioTwoAI";
 import Skills from "../../components/skills/SkillsTwo";
 import Video from "../../components/video/VideoTwo";
 import Brand from "../../components/Brand";
@@ -24,8 +25,11 @@ const HomeTwo = () => {
       <About />
       {/* End About Section */}
 
-      <Portfolio />
-      {/* End Portfolio Section */}
+      <PortfolioSWE />
+      {/* End PortfolioSWE Section */}
+
+      <PortfolioAI />
+      {/* End PortfolioAI Section */}
 
       {/* <Skills /> */}
       {/* End Skills Section */}
