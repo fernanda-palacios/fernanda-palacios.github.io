@@ -1,12 +1,11 @@
 export const projects = [
   {
     title: "Various applications - Autoencoders",
-    description: ` This project demonstrates a versatile application of autoencoders for various
-     machine learning tasks using MNIST and Oxford-IIIT Pet datasets. The MNIST section focuses
-      on building a fully connected autoencoder for digit reconstruction and latent space 
-      visualization, including denoising and linear interpolation between data points. 
-      The Oxford-IIIT Pet segment introduces convolutional autoencoders for image compression,
-       denoising, and segmentation tasks.
+    description: ` This project features autoencoders in machine learning with MNIST and Oxford-IIIT
+     Pet datasets. The MNIST section focuses on building a fully connected autoencoder for digit 
+     reconstruction and latent space visualization, including denoising and linear interpolation
+      between data points. The Oxford-IIIT Pet segment introduces convolutional autoencoders for 
+      image compression, denoising, and segmentation tasks.
     `,
     "prog_lang": "Python",
     "category": "Python",
@@ -17,11 +16,11 @@ export const projects = [
   },
   {
     title: "Facial recognition - Transfer Learning",
-    description: `A comprehensive approach to Celebrity Facial Recognition using Transfer Learning.
-     It uses the CelebA dataset and the ResNet18 base model for transfer learning, modifying its 
-     final layer to suit the specific classification task. The project also compares the performance
-      of the transfer learning approach against training a model from scratch, showcasing the 
-      effectiveness and efficiency of leveraging pre-trained models in deep learning tasks. 
+    description: `This project uses the CelebA dataset and the ResNet18 base model for transfer
+     learning, modifying its final layer to suit the specific classification task. The project also
+      compares the performance of the transfer learning approach against training a model from 
+      scratch, showcasing the effectiveness and efficiency of leveraging pre-trained models in 
+      deep learning tasks. 
     `,
     "prog_lang": "Python",
     "category": "Python",
