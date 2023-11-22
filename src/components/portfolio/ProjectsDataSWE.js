@@ -23,14 +23,11 @@ export const projects = [
         City of Toronto Project`,
     "description":
       `
-        This project was part of CSC301 Software Engineering where our team built an application 
-        for the Transportation Data & Analytics team at the City of Toronto. 
-         It is a web application where consultants can acquire traffic data from 
-         street segments in Toronto.  Users can create traffic data requests by drawing 
-         complex routes on a map and specifying date ranges or metrics to be included.  
-         Queries are automatically validated and modified based on available traffic data 
-         from the team’s big data repositories, and users can then download their requested 
-         CSV formatted datasets.`,
+      In CSC301 Software Engineering, our group developed a web application for the City of 
+      Toronto's Transportation Data & Analytics team. This application allows consultants to
+       efficiently query Toronto’s extensive traffic data through a complex and intuitive map
+        interface.
+        `,
     "prog_lang": 'Javascript, Python',
     "technologies": "React, Material UI, Mapbox, Django, PostgreSQL, DynamoDB",
     "links": [
@@ -40,6 +37,23 @@ export const projects = [
       }
     ],
     "category": "Javascript, Python"
+  },
+  {
+    "title": "IoT password manager",
+    "description":
+      `
+        This project was part of CSC454 Business of Software / CSC491 Capstone Design Project. It
+         detects IoT devices in the network with compromised passwords by leveraging Pwned Passwords’
+          API, and allows users to easily and securely manage their IoT devices' passwords through a web application.
+        `,
+    "prog_lang": "Python",
+    "technologies": "HTML, Jekyll",
+    "links": [
+      { "name": "Demo (Scanner)", "href": "https://drive.google.com/drive/folders/1SwSdDjxPFChVg55GNZlQpSCcS5aKwm3x?usp=sharing" },
+      { "name": "Source Code (Web App Prototype)", "href": "https://github.com/fernanda-palacios/soteria-app" },
+      { "name": "Live Demo (Web App Prototype)", "href": "https://fernanda-palacios.github.io/iot-password-manager.github.io/" }
+    ],
+    "category": "Python"
   },
   {
     "title": "Interpreters",
@@ -66,30 +80,6 @@ export const projects = [
     "technologies": "Mininet",
     onRequest: true,
     "category": "C"
-  },  
-  {
-    title: "FunPuzz CSP",
-    description: `A project on Constraint Satisfaction Problems (CSP’s) in AI which implements two 
-    constraint propagators (Forward Checking and Generalized Arc Consistency), as well as models
-     the FunPuzz game as a CSP using binary and non-binary constraints to solve it and compare the
-      performance of these solutions.`,
-    "prog_lang": "Python",
-    onRequest: true,
-    "category": "Python",
-    "links": [
-      { "name": "Demo", "href": "https://drive.google.com/file/d/1u_Cpl__ZhmgisjzeEU-Tm7Zyx1gJ4P0-/view?usp=sharing"}
-    ],
-  },
-  {
-    title: "Othello Player",
-    description: `An AI agent player for the game Othello. It uses the Minimax algorithm to play,
-     along with Alpha-Beta Pruning, a depth limit for the search for a faster search, state caching
-      and a node ordering heuristic. It can be quite hard to play against as shown in the demo!`,
-    onRequest: true,
-    "category": "Python",
-    "links": [
-      { "name": "Demo", "href": "https://drive.google.com/file/d/1EQjuErBJYFETZL8SZ-EJzEY4JXN0FZ46/view?usp=sharing"}
-    ],
   },
   {
     "title": "Virtual Memory ",
@@ -104,7 +94,7 @@ export const projects = [
     "prog_lang": "Python, C",
     onRequest: true,
     "category": "Python, C"
-  },  
+  },
   {
     "title": "Queues Synchronization",
     "description":
@@ -136,7 +126,7 @@ export const projects = [
       
         `,
     "prog_lang": 'C',
-    "technologies": "FUSE",    
+    "technologies": "FUSE",
     onRequest: true,
     "category": "C"
   },
@@ -177,23 +167,6 @@ export const projects = [
     "category": "Javascript"
   },
   {
-    "title": "Pizza Parlour CLI app",
-    "description":
-      `
-        A CLI app where users can place orders from a pizza parlour. 
-        The entire workflow is implemented for users to view the menu, 
-        start an order, add any pizzas / toppings / drinks as well as 
-        check out and choose a delivery method.
-
-        `,
-    "prog_lang": "Python",
-    "technologies": "Click, Flask",
-    "links": [
-      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/pizza-parlour-cli " }
-    ],
-    "category": "Python"
-  },
-  {
     "title": "Indivisualize",
     "description":
       `
@@ -229,101 +202,83 @@ export const projects = [
 
     ],
     "category": "Java"
-  },
-  {
-    "title": "Mancala game",
-    "description":
-      `
-      A mancala CLI game application where users can connect to a server and play 
-      the famous and fun game of mancala. Implemented the application in C and 
-      used sockets as the medium of communication between players.
-        `,
-    "prog_lang": "C",
-    "links": [
-      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/mancala-game" }
-    ],
-    "category": "C"
-  },
-  {
-    "title": "Music Visualizer",
-    "description":
-      `
-        A music visualizer which connects to Altera's DE1-Soc board FPGA (VGA display)
-         and is implemented in Verilog. This music visualizer changes the length and colour
-          of its sound waves in response to the volume and pace of the beat.
-        `,
-    "technologies": "Verilog (Hardware Description Language)",
-    "links": [
-      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/music-visualizer" }
-    ],
-    "category": "Verilog"
-  },
-  {
-    "title": "Text sentiment analysis",
-    "description":
-      `
-        A tidy text mining project where text sentiment is analyzed in two of 
-        Sigmund Freud’s books. The main tones and emotions present in the books 
-        are determined and plotted with ggplot2.
-        `,
-    "prog_lang": "R",
-    "technologies": "Tidytext, ggplot2",
-    "links": [
-      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/text-sentiment-analysis" }
-    ],
-    "category": "R"
-  },
-  {
-    "title": "IoT password manager",
-    "description":
-      `
-        A secure password manager for IoT devices. This project 
-        was part of CSC454 Business of Software / CSC491 Capstone Design Project. 
-        It is a software service that detects IoT devices in the network with 
-        compromised passwords. It leverages Pwned Passwords’ API, a database with more than 
-        600m real-world passwords previously exposed in data breaches. The project also 
-        contains a web application prototype where users can easily manage their IoT devices’ passwords.
-        `,
-    "prog_lang": "Python",
-    "technologies": "HTML, Jekyll",
-    "links": [
-      { "name": "Demo (Scanner)", "href": "https://drive.google.com/drive/folders/1SwSdDjxPFChVg55GNZlQpSCcS5aKwm3x?usp=sharing" },
-      { "name": "Source Code (Web App Prototype)", "href": "https://github.com/fernanda-palacios/soteria-app" },
-      { "name": "Live Demo (Web App Prototype)", "href": "https://fernanda-palacios.github.io/iot-password-manager.github.io/" }
-    ],
-    "category": "Python"
-  },
-  {
-    "title": "Airbnb package",
-    "description":
-      `
-      An R package which uses a dataset of Airbnb listings in Amsterdam and 
-      provides travellers with information regarding housing options 
-      under different criteria. For instance, it can list out Airbnb's average 
-      prices per neighbourhood or listings in a given price range and with a given 
-      number of bedrooms.
-        `,
-    "prog_lang": "R",
-    "links": [
-      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/airbnb-r-package" }
-    ],
-    "category": "R"
-  },
-  {
-    "title": "UoftT Connect",
-    "description":
-      `
-      This project was part of CSC318 Design of Interactive 
-      Computational Media and its goal was to enhance the social fabric 
-      across the student community.  We designed a mobile app for students to 
-      find and join groups for studying, socializing or extracurricular activities. 
-      Throughout the design process, we conducted user research, developed and tested 
-      various prototypes and developed a high-fidelity prototype using Framer. 
-        `,
-    "technologies": "Framer",
-    "links": [
-      { "name": "Demo", "href": "https://drive.google.com/file/d/1P5lD8agcqHJ9reJ3zWBdJHzZUqsFQuBJ/view?usp=sharing" }
-    ],
-    "category": "UX/UI Design"
   }
+  // ,
+  // {
+  //   "title": "Pizza Parlour CLI app",
+  //   "description":
+  //     `
+  //       A CLI app where users can place orders from a pizza parlour. 
+  //       The entire workflow is implemented for users to view the menu, 
+  //       start an order, add any pizzas / toppings / drinks as well as 
+  //       check out and choose a delivery method.
+
+  //       `,
+  //   "prog_lang": "Python",
+  //   "technologies": "Click, Flask",
+  //   "links": [
+  //     { "name": "Source Code", "href": "https://github.com/fernanda-palacios/pizza-parlour-cli " }
+  //   ],
+  //   "category": "Python"
+  // }
+  // ,
+  // {
+  //   "title": "Mancala game",
+  //   "description":
+  //     `
+  //     A mancala CLI game application where users can connect to a server and play 
+  //     the famous and fun game of mancala. Implemented the application in C and 
+  //     used sockets as the medium of communication between players.
+  //       `,
+  //   "prog_lang": "C",
+  //   "links": [
+  //     { "name": "Source Code", "href": "https://github.com/fernanda-palacios/mancala-game" }
+  //   ],
+  //   "category": "C"
+  // },
+  // {
+  //   "title": "Music Visualizer",
+  //   "description":
+  //     `
+  //       A music visualizer which connects to Altera's DE1-Soc board FPGA (VGA display)
+  //        and is implemented in Verilog. This music visualizer changes the length and colour
+  //         of its sound waves in response to the volume and pace of the beat.
+  //       `,
+  //   "technologies": "Verilog (Hardware Description Language)",
+  //   "links": [
+  //     { "name": "Source Code", "href": "https://github.com/fernanda-palacios/music-visualizer" }
+  //   ],
+  //   "category": "Verilog"
+  // },
+  // {
+  //   "title": "Airbnb package",
+  //   "description":
+  //     `
+  //     An R package which uses a dataset of Airbnb listings in Amsterdam and 
+  //     provides travellers with information regarding housing options 
+  //     under different criteria. For instance, it can list out Airbnb's average 
+  //     prices per neighbourhood or listings in a given price range and with a given 
+  //     number of bedrooms.
+  //       `,
+  //   "prog_lang": "R",
+  //   "links": [
+  //     { "name": "Source Code", "href": "https://github.com/fernanda-palacios/airbnb-r-package" }
+  //   ],
+  //   "category": "R"
+  // },
+  // {
+  //   "title": "Text sentiment analysis",
+  //   "description":
+  //     `
+  //       A tidy text mining project where text sentiment is analyzed in two of 
+  //       Sigmund Freud’s books. The main tones and emotions present in the books 
+  //       are determined and plotted with ggplot2.
+  //       `,
+  //   "prog_lang": "R",
+  //   "technologies": "Tidytext, ggplot2",
+  //   "links": [
+  //     { "name": "Source Code", "href": "https://github.com/fernanda-palacios/text-sentiment-analysis" }
+  //   ],
+  //   "category": "R"
+  // }
 ]
