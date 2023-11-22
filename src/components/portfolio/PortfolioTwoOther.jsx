@@ -29,7 +29,7 @@ const PortfolioTwoSWE = () => {
               <div className="shane_tm_title">
                 <div className="title_flex">
                   <div className="left">
-                    <span>Other Computer Science projects</span>
+                    {/* <span>Other Computer Science projects</span> */}
                     <h3>Other CS Projects</h3>
                   </div>
                 </div>

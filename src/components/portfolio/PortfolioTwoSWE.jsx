@@ -5,7 +5,7 @@ import Modal from "react-modal";
 import { projects } from './ProjectsDataSWE';
 
 const PortfolioTwoSWE = () => {
-  const projectsCompressedStyling = {1: true, 15: true} //city of toronto, iotpm
+  const projectsCompressedStyling = {1: true, 2: true} //city of toronto, iotpm
 
   const [isOpenModal, setIsOpenModal] = useState(false);
   const [currProject, setCurrProject] = useState(undefined);
@@ -29,8 +29,8 @@ const PortfolioTwoSWE = () => {
               <div className="shane_tm_title">
                 <div className="title_flex">
                   <div className="left">
-                    <span>Software Engineering Projects</span>
-                    <h3>SWE Projects</h3>
+                    {/* <span>Software Engineering Projects</span> */}
+                    <h3>Software Engineering Projects</h3>
                   </div>
                 </div>
               </div>
