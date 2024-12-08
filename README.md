@@ -2,7 +2,7 @@
 
 ## Local Development
 ```
-npm install
+npm install / npm install --legacy-peer-deps
 npm run start
 npm run deploy
 ```

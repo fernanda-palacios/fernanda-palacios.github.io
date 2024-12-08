@@ -8,7 +8,7 @@ export const projects = [
       `,
     "prog_lang": "Scratch, Python",
     "links": [
-      { "name": "Video", "href": "https://drive.google.com/file/d/1D877c4wbt7pZlQkqynRkiDvH-0mVRpx7/view?usp=drive_link" }
+      { "name": "Video", "href": "https://drive.google.com/file/d/1D877c4wbt7pZlQkqynRkiDvH-0mVRpx7/view?usp=sharing" }
     ],
     "category": "Teaching"
   },

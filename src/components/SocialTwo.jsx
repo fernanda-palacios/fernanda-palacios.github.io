@@ -11,7 +11,7 @@ const SocialShare = [
   },
   {
     iconName: "email",
-    link: "fernanda.palaciosaltamirano@mail.utoronto.ca"
+    link: "fernanda.palaciosaltamirano@alumni.utoronto.ca"
   }
 ];
 const Social = () => {

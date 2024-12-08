@@ -161,8 +161,7 @@ export const projects = [
     "prog_lang": "Javascript",
     "technologies": "HTML, CSS, Bootstrap, Express, MongoDB",
     "links": [
-      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/movie-review-app" },
-      { "name": "Live Demo", "href": "https://what-a-movie.herokuapp.com/" }
+      { "name": "Source Code", "href": "https://github.com/fernanda-palacios/movie-review-app" }      
     ],
     "category": "Javascript"
   },
